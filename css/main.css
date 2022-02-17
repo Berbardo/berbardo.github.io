@@ -1,0 +1,71 @@
+html {
+	background: white url("../img/animspace.gif") repeat;
+}
+
+#wrapper {
+    /* max-width: 630px; */
+    width: 50%;
+    margin: auto;
+    padding: 80px 7% 50px 7%;
+      background: cornsilk;
+      box-shadow: 0 0 0 5px MidnightBlue inset;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+li.lista {
+	margin: 0;
+	padding: 18px 0 18px 40px;
+	list-style: none;
+	background-image: url("../img/hand.gif");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+}
+
+/* velhos */
+
+body {
+    margin: 60px auto;
+    width: 70%;
+}
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+p, li.lista {
+    font-size: 1.5em;
+    line-height: 0.4em;
+    color: #333;
+}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
