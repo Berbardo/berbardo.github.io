@@ -1,38 +1,40 @@
 <!DOCTYPE html>
+    <div id="overlay">
+    </div>
 	<html>
-		<head>
-			<!-- favicon -->
+        <head>
+            <!-- favicon -->
             <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
 
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
+            <title>{{ page.title }}</title>
+            <!-- link to main stylesheet -->
             <link rel="stylesheet" type="text/css" href="/css/main.css">
             
         </head>
         <div id="wrapper">
-		<body>
-			<nav>
-	    		<ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">Sobre</a></li>
-                    <li><a href="/links">Links Interessantes</a></li>
-	    		</ul>
-            </nav>
+            <body>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">Sobre</a></li>
+                        <li><a href="/links">Links Interessantes</a></li>
+                    </ul>
+                </nav>
 
-            <img src="/img/welcome.gif" alt="Minha Figura" class="center">
+                <img src="/img/welcome.gif" alt="Minha Figura" class="center">
 
-            <h1>{{ page.title }}</h1>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-                    <li><a href="mailto:bernardo.rcoutinho@usp.br">email</a></li>
-                    <li><a href="https://github.com/Berbardo">github.com/Berbardo</a></li>
-				</ul>
-			</footer>
-        </body>
+                <h1>{{ page.title }}</h1>
+                <div class="container">
+                
+                {{ content }}
+                
+                </div><!-- /.container -->
+                <footer>
+                    <ul>
+                        <li><a href="mailto:bernardo.rcoutinho@usp.br">email</a></li>
+                        <li><a href="https://github.com/Berbardo">github.com/Berbardo</a></li>
+                    </ul>
+                </footer>
+            </body>
         </div>
 	</html>
