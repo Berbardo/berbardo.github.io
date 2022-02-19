@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: Chicago;
-    src: url("../font/Chicago.ttf") format('truetype');
+    src: url("./font/Chicago.ttf") format('truetype');
     font-style: normal;
 }
 
