@@ -1,15 +1,12 @@
 ---
-layout: default
+layout: linkstemp
 title: Web
 permalink: /web/
 ---
 
 <div class="blurb">
-
-    <p><li class="lista">17/02/2022 - <a href="https://gifcities.org">Gifs do Geocities</a></li></p>
-    <p><li class="lista">16/02/2022 - <a href="https://neustadt.fr">Site no Qual Esse Aqui é Baseado</a></li></p>
-    <p><li class="lista">16/02/2022 - <a href="https://wikitrivia.tomjwatson.com">Trivia de Acontecimentos de Cada Ano</a></li></p>
-    <p><li class="lista">OLD - <a href="https://jitter.video/gallery/">Templates de Redes Sociais</a></li></p>
-    <p><li class="lista">OLD - <a href="https://github.com/Igglybuff/awesome-piracy#roms">Awesome List de Pirataria</a></li></p>
+    {% for post in site.weblinks reversed %}
+        {% include show_posts.html %}
+    {% endfor %}
 </div><!-- /.blurb -->
 

@@ -50,6 +50,46 @@ iframe {
     margin: 20px auto;
 }
 
+/* Links */
+html.links {
+    background: #feeec4;
+}
+
+h1#links {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+h3.post {
+    margin: 0 0 10px 0;
+}
+
+a.post {
+    font-family: 'Chicago', sans-serif;
+    font-size: 0.9rem;
+    color: black;
+}
+
+h4.post {
+    margin: 0 0 10px 0;
+    font-family: 'Chicago', sans-serif;
+    font-size: 0.9rem;
+    color: black;
+}
+
+p.post {
+    font-family: 'Chicago', sans-serif;
+    font-size: 0.7rem;
+    color: black;
+}
+
+div.post {
+    margin: 0 0 40px 80px;
+    padding: 1em;
+    border: 1px solid black;
+    background: #dbffff;
+    box-shadow:5px 5px #38ffcc;
+}
 /* Art */
 
 h1#gallery {

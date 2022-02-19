@@ -1,11 +1,12 @@
 ---
-layout: default
+layout: linkstemp
 title: Vídeos
 permalink: /video/
 ---
 
 <div class="blurb">
 
-    <p><li class="lista">OLD - <a href="https://www.reddit.com/r/nedsdeclassified/comments/hoahv7/help/">Drive com Manual de Sobrevivência Escolar do Ned</a></li></p>
-</div><!-- /.blurb -->
+    {% for post in site.videolinks reversed %}
+        {% include show_posts.html %}
+    {% endfor %}</div><!-- /.blurb -->
 

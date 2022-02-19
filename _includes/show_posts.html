@@ -1,0 +1,16 @@
+<a class="post" href={{ post.link }}>
+    {% assign loopindex = forloop.index | modulo: 2 %}
+    {% if loopindex == 1 %}
+    <div class="post" style="margin: 0 0 40px 80px;">
+        <!-- <h3 class="post"></h3> -->
+        <h4 class="post">{{ post.day }} - {{ post.title }}</h4>
+        <p class="post">{{ post.text }}</p>
+    </div>
+    {% else %}
+    <div class="post" style="margin: 0 80px 40px 0;">
+        <!-- <h3 class="post">{{ post.day }}</h3> -->
+        <h4 class="post">{{ post.day }} - {{ post.title }}</h4>
+        <p class="post">{{ post.text }}</p>
+    </div>
+    {% endif %}
+</a>
