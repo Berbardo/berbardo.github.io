@@ -6,13 +6,9 @@
     font-style: normal;
 }
 
-/* Site */
+/* Overlays */
 
-html {
-	background: white url("../img/animspace.gif") repeat;
-}
-
-#overlay {
+#overlay-window {
     pointer-events: none;
     background: white url("../img/window.png");
     position: fixed; /* Sit on top of the page content */
@@ -27,6 +23,14 @@ html {
     background-color: rgba(0,0,0, 0); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
+}
+
+/* Site */
+
+html {
+	background: white url("../img/animspace.gif") repeat;
+    height: 100%;
+    width: 100%;
 }
 
 #wrapper {
@@ -55,7 +59,7 @@ li.lista {
 	background-size: 40px;
 }
 
-iframe {
+.construction {
     display:block;
     margin: 20px auto;
 }
@@ -127,46 +131,4 @@ h1#gallery {
     margin: 8px 4px 4px 4px;
     vertical-align: middle;
     width: 96%;
-}
-
-/* velhos */
-
-body {
-    margin: 60px auto;
-    width: 70%;
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: #999;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-
-p, li.lista {
-    font-size: 1.5em;
-    line-height: 0.4em;
-    color: #333;
-}
-
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
 }

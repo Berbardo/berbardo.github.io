@@ -8,18 +8,25 @@ permalink: /art/
 
     <div class="art-row">
         <div class="art-column">
-            <img src="../img/art/ahoy.png">
-            <img src="../img/art/hypno.png">
-            <img src="../img/art/vemoji.png">
+            {% for image in site.static_files %}
+                {% if image.path contains 'art/col1' %}
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                {% endif %}
+            {% endfor %}
         </div>
         <div class="art-column">
-            <img src="../img/art/brsunset.jpg">
-            <img src="../img/art/whatfont.jpg">
-            <img src="../img/art/brending.png">
+            {% for image in site.static_files %}
+                {% if image.path contains 'art/col2' %}
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                {% endif %}
+            {% endfor %}
         </div>
         <div class="art-column">
-            <img src="../img/art/fresno.jfif">
-            <img src="../img/art/vsun.png">
+            {% for image in site.static_files %}
+                {% if image.path contains 'art/col3' %}
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </div><!-- /.blurb -->

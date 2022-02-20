@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <div id="overlay">
+    <div id="overlay-window">
     </div>
 	<html>
         <head>
@@ -9,19 +9,12 @@
             <title>{{ page.title }}</title>
             <!-- link to main stylesheet -->
             <link rel="stylesheet" type="text/css" href="/css/main.css">
+            <link rel="stylesheet" type="text/css" href="/css/oldsite.css">
             
         </head>
         <div id="wrapper">
             <body>
-                <nav>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">Sobre</a></li>
-                        <li><a href="/edits">Montagens</a></li>
-                        <li><a href="/art">Galeria de Ideias</a></li>
-                        <li><a href="/links">Links Interessantes</a></li>
-                    </ul>
-                </nav>
+                {% include nav.html %}
 
                 <img src="/img/welcome.gif" alt="Minha Figura" class="center">
 
@@ -31,12 +24,7 @@
                 {{ content }}
                 
                 </div><!-- /.container -->
-                <footer>
-                    <ul>
-                        <li><a href="mailto:bernardo.rcoutinho@usp.br">email</a></li>
-                        <li><a href="https://github.com/Berbardo">github.com/Berbardo</a></li>
-                    </ul>
-                </footer>
+                {% include footer.html %}
             </body>
         </div>
 	</html>

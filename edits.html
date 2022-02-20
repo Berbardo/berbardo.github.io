@@ -8,23 +8,25 @@ permalink: /edits/
 
     <div class="art-row">
         <div class="art-column">
-            <img src="https://drive.google.com/uc?export=view&id=1omU3htzDmWKdu24PVb6a1cR9wBkrjNyg">
-            <img src="https://drive.google.com/uc?export=view&id=1Z3ahEtbglJ54RneJvN3JSywaFhAbCfiF">
-            <img src="https://drive.google.com/uc?export=view&id=1OkVQuFBP4Egt_0nBJrthZEBnIpIoPjle">
-            <img src="https://drive.google.com/uc?export=view&id=10Wtctulx3Vzj-44c2K4REml6fKuV5dsS">
-            <img src="https://drive.google.com/uc?export=view&id=1CyynGtwDOVrks4e0Loo8FBFYyQn6ALWJ">
+            {% for image in site.static_files %}
+                {% if image.path contains 'edits/col1' %}
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="noise" />
+                {% endif %}
+            {% endfor %}
         </div>
         <div class="art-column">
-            <img src="https://drive.google.com/uc?export=view&id=1OPGAIFmZ5ZPsY4mvcrxKwoMA0F8M0bhW">
-            <img src="https://drive.google.com/uc?export=view&id=1pAvA7qOPwg51sLL0iKvcg0reMjk1Go-l">
-            <img src="https://drive.google.com/uc?export=view&id=176Y8UNj3DmiMMw0idtca7eaj3OiL2_9H">
-            <img src="https://drive.google.com/uc?export=view&id=1a9gtZMpRfvZXHyXXMmWlW56rTfvhe4YY">
+            {% for image in site.static_files %}
+                {% if image.path contains 'edits/col2' %}
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                {% endif %}
+            {% endfor %}
         </div>
         <div class="art-column">
-            <img src="https://drive.google.com/uc?export=view&id=19OqWWdhi2RVGbBx-0gZD1-Twg95_zbRJ">
-            <img src="https://drive.google.com/uc?export=view&id=1WvMJfRqR2p4EsISmhHrZDVKUQwADDRWX">
-            <img src="https://drive.google.com/uc?export=view&id=1BadX0eRSmaptzhx7r8Hjb3sMgBESFXij">
-            <img src="https://drive.google.com/uc?export=view&id=1AelHCe6rqlO-dV1sV84EWPu4mLF81MAO">
+            {% for image in site.static_files %}
+                {% if image.path contains 'edits/col3' %}
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </div><!-- /.blurb -->
