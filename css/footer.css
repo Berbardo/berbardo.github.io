@@ -1,6 +1,7 @@
 footer li a {
     transition: all 0.3s ease-in 0s, all 1s ease 0s;
-    margin-right: 0;
+    margin-left: 10px;
+    float: right;
 }
 
 footer .twitter:hover {
