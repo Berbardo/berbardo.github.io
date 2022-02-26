@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+    {% include rainbow.html %}
     <div id="overlay-window">
     </div>
 	<html>
@@ -12,13 +13,12 @@
             <link rel="stylesheet" type="text/css" href="/css/oldsite.css">
             
         </head>
+        {% include nav.html %}
         <div id="wrapper">
             <body>
-                {% include nav.html %}
 
                 <img src="/img/welcome.gif" alt="Minha Figura" class="center">
 
-                <h1>{{ page.title }}</h1>
                 <div class="container">
                 
                 {{ content }}

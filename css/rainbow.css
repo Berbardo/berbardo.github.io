@@ -1,0 +1,35 @@
+h1.rainbow {
+    color: transparent;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: "Poppins",sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.05em;
+    background: linear-gradient(
+        #fd004c 16.7%,
+        #fe9000 16.7%,
+        #fe9000 33.4%,
+        #fff020 33.4%,
+        #fff020 50.1%,
+        #3edf4b 50.1%,
+        #3edf4b 66.8%,
+        #3363ff 66.8%,
+        #3363ff 83.5%,
+        #b102b7 83.5%
+    );
+    /* -webkit-text-stroke: 0.04em #f1f1f1; */
+    -webkit-background-clip: text;
+            background-clip: text;
+    line-height: 1.4em;
+    animation: rainbow 50s linear infinite;
+}
+
+@keyframes rainbow{
+    100%{
+        background-position: 0 30em;
+    }
+}

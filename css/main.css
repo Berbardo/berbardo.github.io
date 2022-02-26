@@ -8,12 +8,17 @@
 
 /* Overlays */
 
+* {
+    font-family: 'Chicago', sans-serif;
+}
+
 #overlay-window {
     pointer-events: none;
     background: white url("../img/window.png");
     position: fixed; /* Sit on top of the page content */
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin: 0;
     width: 100%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
     top: 0;
@@ -34,11 +39,11 @@ html {
 }
 
 #wrapper {
-    /* max-width: 630px; */
     width: 70%;
     margin: auto;
-    padding: 80px 7% 50px 7%;
-    background: cornsilk;
+    margin-top: 20px;
+    padding: 20px 7% 50px 7%;
+    background: #fff8dc;
     box-shadow: 0 0 0 5px MidnightBlue inset;
 }
 
@@ -46,6 +51,7 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     height: 20%;
 }
 
