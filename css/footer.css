@@ -1,0 +1,17 @@
+footer li a {
+    transition: all 0.3s ease-in 0s, all 1s ease 0s;
+    margin-right: 0;
+}
+
+footer .twitter:hover {
+    color:#00a9f1;
+}
+footer .youtube:hover {
+    color:#ff3333;
+}
+footer .github:hover {
+    color:#2f2f2f;
+}
+footer .email:hover {
+    color:#e4e725;
+}

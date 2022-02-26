@@ -35,7 +35,7 @@ html {
 
 #wrapper {
     /* max-width: 630px; */
-    width: 50%;
+    width: 70%;
     margin: auto;
     padding: 80px 7% 50px 7%;
     background: cornsilk;
@@ -100,12 +100,31 @@ p.post {
 }
 
 div.post {
+    position: relative;
     margin: 0 0 40px 80px;
     padding: 1em;
     border: 1px solid black;
     background: #dbffff;
     box-shadow:5px 5px #38ffcc;
+    z-index: 5;
 }
+
+img.post {
+    position: relative;
+    /* border: 1px solid black; */
+    /* box-shadow: 5px -5px 0 0 #6338ff; */
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+                    drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(1px 1px 0 black) 
+            drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(5px -5px 2px #6338ff);
+    /* float: right; */
+    /* margin-right: 15px; */
+    height: 200px;
+    margin: 0 0 -60px 0;
+    z-index: 1;
+}
+
 /* Art */
 
 h1#gallery {
