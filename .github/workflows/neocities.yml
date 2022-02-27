@@ -1,0 +1,59 @@
+name: Deploy to neocities
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+concurrency: # prevent concurrent deploys doing starnge things
+  group: deploy-to-neocities
+  cancel-in-progress: true
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "deploy"
+  deploy:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        
+#       - name: Get cached gems
+#         uses: actions/cache@v2
+#         with:
+#           path: vendor/bundle
+#           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+#           restore-keys: |
+#             ${{ runner.os }}-gems-
+            
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.3 # Not needed with a .ruby-version file
+          bundler-cache: true
+            
+      - name: "Build Site"
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      # Runs a single command using the runners shell
+      - name: Deploy to Neocities
+        # You may pin to the exact commit or the version.
+        # uses: bcomnes/deploy-to-neocities@1ef0bf036b37ed5abffa9b6ab96d244a581aa1ce
+        uses: bcomnes/deploy-to-neocities@v1.1.4
+        with:
+          # Neocities API token for site to deploy to
+          api_token: 222b2e7be339da0bccb2233f3d12a722
+          # Local folder to deploy to neocities
+          dist_dir: _site # default is public
+          # Delete orphaned files on neocities that don't exist in distDir
+          cleanup: false
