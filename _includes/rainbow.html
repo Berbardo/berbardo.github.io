@@ -7,10 +7,7 @@
     <!--Stylesheet-->
     <link rel="stylesheet" href="../css/rainbow.css">
 </head>
-<body>
-    <h1 class="rainbow">
-        pagina do
-        bernardo
-    </h1>
-</body>
+<h1 class="rainbow">
+    {{ include.content | default: "pagina do bernardo" }}
+</h1>
 </html>

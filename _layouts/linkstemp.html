@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-    <div id="overlay-window">
-    </div>
     {% include bubbles.html %}
+    {% include overlay.html %}
 	<html class="links">
         <head>
             <!-- favicon -->
@@ -9,17 +8,17 @@
 
             <title>{{ page.title }}</title>
             <!-- link to main stylesheet -->
+            <link rel="stylesheet" href="https://unpkg.com/98.css">
             <link rel="stylesheet" type="text/css" href="/css/main.css">
-            <link rel="stylesheet" type="text/css" href="/css/oldsite.css">
             
         </head>
-            <body>
-                {% include nav.html %}
+        {% include nav.html %}
+        <div class="body">
 
-                <h1 id="links">{{ page.title }}</h1>
-                
-                {{ content }}
-                
-                {% include footer.html %}
-            </body>
+            <h1 id="links">{{ page.title }}</h1>
+            
+            {{ content }}
+            
+            {% include footer.html %}
+        </div>
 	</html>

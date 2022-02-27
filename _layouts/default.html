@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-    {% include rainbow.html %}
-    <div id="overlay-window">
-    </div>
 	<html>
         <head>
             <!-- favicon -->
@@ -9,22 +6,24 @@
 
             <title>{{ page.title }}</title>
             <!-- link to main stylesheet -->
+            <link rel="stylesheet" href="https://unpkg.com/98.css">
             <link rel="stylesheet" type="text/css" href="/css/main.css">
-            <link rel="stylesheet" type="text/css" href="/css/oldsite.css">
             
         </head>
+        {% include overlay.html %}
+        {% include rainbow.html content="pagina do bernardo" %}
         {% include nav.html %}
-        <div id="wrapper">
-            <body>
+        <div class="body">
+            <div id="wrapper">
+                <body>
 
-                <img src="/img/welcome.gif" alt="Minha Figura" class="center">
-
-                <div class="container">
-                
-                {{ content }}
-                
-                </div><!-- /.container -->
-                {% include footer.html %}
-            </body>
+                    <div class="container">
+                    
+                    {{ content }}
+                    
+                    </div><!-- /.container -->
+                    {% include footer.html %}
+                </body>
+            </div>
         </div>
 	</html>

@@ -1,0 +1,29 @@
+nav ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    margin: auto;
+    width: 70%;
+    margin-top: 40px;
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align:center;
+}
+
+nav ul li {
+    justify-content: center;
+    display: inline-block;
+    margin: 0 10px;
+    background: #3038d6;
+    border: 4px ridge;
+    padding: 4px 8px;
+    box-shadow: 2px 2px 2px #333;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffe8e9;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

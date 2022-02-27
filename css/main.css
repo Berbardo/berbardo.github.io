@@ -6,30 +6,12 @@
     font-style: normal;
 }
 
-/* Overlays */
-
-* {
+nav li,
+.blurb li
+/* , h2 */
+{
     font-family: 'Chicago', sans-serif;
 }
-
-#overlay-window {
-    pointer-events: none;
-    background: white url("../img/window.png");
-    position: fixed; /* Sit on top of the page content */
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin: 0;
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0, 0); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-}
-
 /* Site */
 
 html {
@@ -38,11 +20,41 @@ html {
     width: 100%;
 }
 
+body {
+    margin: 0;
+    font-size: 16px;
+    width: 100%;
+}
+
+.body {
+    margin: 0 auto auto;
+    width: 70%;
+}
+
+.outline {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    border: 4px ridge;
+    pointer-events: none;
+}
+
+li.lista {
+    font-size: 1.5em;
+    line-height: 0.4em;
+    color: #333;
+}
+
 #wrapper {
     width: 70%;
     margin: auto;
     margin-top: 20px;
-    padding: 20px 7% 50px 7%;
+    margin-bottom: 10px;
+    padding: 20px 7% 20px 7%;
     background: #fff8dc;
     box-shadow: 0 0 0 5px MidnightBlue inset;
 }
@@ -52,7 +64,23 @@ html {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    height: 20%;
+    /* height: 10%; */
+    width: 20%;
+}
+
+.title {
+    font-size: 2em;
+    font-family: 'Chicago', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto {
+    font-size: 1.5em;
+    font-family: 'Chicago', sans-serif;
+    text-align: center;
+    font-weight: lighter;
 }
 
 li.lista {
@@ -131,9 +159,17 @@ img.post {
     z-index: 1;
 }
 
+/* Windows */
+
+.window p {
+    font-size: 13px;
+    line-height: 13px;
+}
+
 /* Art */
 
 h1#gallery {
+    font-size: 3em;
     color: rgb(255, 255, 255);
     text-align: center;
 }
