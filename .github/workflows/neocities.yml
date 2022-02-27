@@ -56,4 +56,4 @@ jobs:
           # Local folder to deploy to neocities
           dist_dir: _site # default is public
           # Delete orphaned files on neocities that don't exist in distDir
-          cleanup: false
+          cleanup: true
