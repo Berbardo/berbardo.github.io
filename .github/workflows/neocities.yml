@@ -36,9 +36,7 @@ jobs:
             
       # Standard usage
       - name: Build Jekyll
-        uses:  helaili/jekyll-action@v2
-        with:
-          build_only: true
+        uses:  agentd00nut/jekyll-build-optional-deploy-gh-pages@master
 
       # Runs a single command using the runners shell
       - name: Deploy to Neocities
