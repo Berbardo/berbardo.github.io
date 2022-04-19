@@ -1,0 +1,38 @@
+footer {
+    border-top: 1px solid #d5d5d5;
+    margin-top: 10px;
+    font-size: .8em;
+}
+
+footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer li a {
+    transition: all 0.3s ease-in 0s, all 1s ease 0s;
+    margin-left: 10px;
+    float: right;
+    text-decoration: none;
+    color: #999;
+}
+
+footer .twitter:hover {
+    color:#00a9f1;
+}
+footer .youtube:hover {
+    color:#ff3333;
+}
+footer .github:hover {
+    color:#2f2f2f;
+}
+footer .email:hover {
+    color:#e4e725;
+}

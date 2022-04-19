@@ -6,25 +6,12 @@
     font-style: normal;
 }
 
-/* Overlays */
-
-#overlay-window {
-    pointer-events: none;
-    background: white url("../img/window.png");
-    position: fixed; /* Sit on top of the page content */
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0, 0); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
+nav li,
+.blurb li
+/* , h2 */
+{
+    font-family: 'Chicago', sans-serif;
 }
-
 /* Site */
 
 html {
@@ -33,12 +20,42 @@ html {
     width: 100%;
 }
 
+body {
+    margin: 0;
+    font-size: 16px;
+    width: 100%;
+}
+
+.body {
+    margin: 0 auto auto;
+    width: 70%;
+}
+
+.outline {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    border: 4px ridge;
+    pointer-events: none;
+}
+
+li.lista {
+    font-size: 1.5em;
+    line-height: 0.4em;
+    color: #333;
+}
+
 #wrapper {
-    /* max-width: 630px; */
-    width: 50%;
+    width: 70%;
     margin: auto;
-    padding: 80px 7% 50px 7%;
-    background: cornsilk;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 20px 7% 20px 7%;
+    background: #fff8dc;
     box-shadow: 0 0 0 5px MidnightBlue inset;
 }
 
@@ -46,7 +63,24 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    margin-top: 20px;
+    /* height: 10%; */
+    width: 20%;
+}
+
+.title {
+    font-size: 2em;
+    font-family: 'Chicago', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto {
+    font-size: 1.5em;
+    font-family: 'Chicago', sans-serif;
+    text-align: center;
+    font-weight: lighter;
 }
 
 li.lista {
@@ -100,15 +134,42 @@ p.post {
 }
 
 div.post {
+    position: relative;
     margin: 0 0 40px 80px;
     padding: 1em;
     border: 1px solid black;
     background: #dbffff;
     box-shadow:5px 5px #38ffcc;
+    z-index: 5;
 }
+
+img.post {
+    position: relative;
+    /* border: 1px solid black; */
+    /* box-shadow: 5px -5px 0 0 #6338ff; */
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+                    drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(1px 1px 0 black) 
+            drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(5px -5px 2px #6338ff);
+    /* float: right; */
+    /* margin-right: 15px; */
+    height: 200px;
+    margin: 0 0 -60px 0;
+    z-index: 1;
+}
+
+/* Windows */
+
+.window p {
+    font-size: 13px;
+    line-height: 13px;
+}
+
 /* Art */
 
 h1#gallery {
+    font-size: 3em;
     color: rgb(255, 255, 255);
     text-align: center;
 }
