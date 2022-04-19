@@ -1,8 +1,5 @@
 # berbardo.github.io
 
-para rodar:
+Meu site pessoal!
 
-```
-bundle exec jekyll build
-bundle exec jekyll serve
-```
+Acesse em https://berbardo.github.io ou https://berbardo.neocities.org.
