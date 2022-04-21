@@ -57,6 +57,7 @@ li.lista {
     padding: 20px 7% 20px 7%;
     background: #fff8dc;
     box-shadow: 0 0 0 5px MidnightBlue inset;
+    box-shadow: 4px 4px 0 #0000ff, 8px 8px 0 #00ffff, 12px 12px 0 #ff00ff;
 }
 
 .center {
@@ -83,6 +84,14 @@ li.lista {
     font-weight: lighter;
 }
 
+
+.textinho {
+    font-size: 1em;
+    font-family: 'Chicago', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+}
+
 li.lista {
 	margin: 0;
 	padding: 18px 0 18px 40px;
@@ -96,6 +105,48 @@ li.lista {
 .construction {
     display:block;
     margin: 20px auto;
+}
+
+/* Links page */
+
+h1.links-title {
+    margin: 0;
+    
+    mix-blend-mode: difference;
+
+    text-transform: lowercase;
+    font-family: 'Chicago', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 4em;
+}
+
+div.boxcontainer {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transform: translateX(50%);
+}
+
+.boxcontainer > .glitchbox {
+    flex: 0 0 47%;
+    text-align: justify;
+}
+
+div.glitchbox {
+    box-shadow: 4px 4px 0 #0000ff, 8px 8px 0 #00ffff, 12px 12px 0 #ff00ff;
+    margin-bottom: 1.25%;
+    border-radius: 2px;
+    background-color: white;
+    width: 50%;
+    padding: 1%;
+    margin: 0.65% auto;
+    margin-bottom: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Links */
@@ -168,9 +219,42 @@ img.post {
 
 /* Art */
 
-h1#gallery {
-    font-size: 3em;
+h1.side-text:first-of-type {
+    left: 5%;
+    top: 50%;
+    transform: translate(0, -50%) rotate(180deg);
+}
+
+h1.side-text:last-of-type {
+    right: 5%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+h1.side-text {
+    mix-blend-mode: difference;
+
+    text-transform: lowercase;
+
+    display: table;
+    font-family: 'Chicago', sans-serif;
+    position: fixed;
     color: rgb(255, 255, 255);
+    writing-mode: tb-rl;
+
+    font-size: 12vh;
+    
+    margin: 0;
+
+    scroll-behavior: smooth;
+    user-select: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.side-text > span {
+    display: table-cell;
     text-align: center;
 }
 
