@@ -1,0 +1,65 @@
+.window#about {
+    width: 10%;
+    margin: 0 0 0 0;
+    top: 25%;
+    left: 15%;
+    z-index: 3;
+    position: fixed;
+}
+
+.window#edits {
+    width: 12%;
+    margin: 0 0 0 0;
+    top: 30%;
+    right: 15%;
+    z-index: 3;
+    position: fixed;
+}
+
+.window#links {
+    width: 9%;
+    margin: 0 0 0 0;
+    bottom: 10%;
+    left: 25%;
+    z-index: 3;
+    position: fixed;
+}
+
+@media screen and (max-width: 640px) {
+    .title-bar-text {
+        margin-right: 3px !important;
+    }
+
+    .window p {
+        font-size: 11px !important;
+    }
+
+    .window#about {
+        width: 25%;
+        margin: 0 0 0 0;
+        top: 17%;
+        left: 5%;
+        z-index: 3;
+        position: fixed;
+    }
+    
+    .window#links {
+        width: 25%;
+        margin: 0 0 0 0;
+        top: 40%;
+        bottom: auto;
+        left: auto;
+        right: 3%;
+        z-index: 3;
+        position: fixed;
+    }
+
+    .window#edits {
+        width: 35%;
+        margin: 0 0 0 0;
+        top: 72%;
+        right: 40%;
+        z-index: 3;
+        position: fixed;
+    }
+}

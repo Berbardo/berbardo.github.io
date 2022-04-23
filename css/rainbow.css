@@ -28,6 +28,12 @@ h1.rainbow {
     animation: rainbow 50s linear infinite;
 }
 
+@media screen and (max-width: 640px) {
+    h1.rainbow {
+        font-size: 2.5em !important;
+    }
+}
+
 @keyframes rainbow{
     100%{
         background-position: 0 30em;
