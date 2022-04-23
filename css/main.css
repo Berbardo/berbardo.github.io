@@ -269,6 +269,10 @@ div.postbox:nth-child(even) img.post {
 }
 
 @media screen and (max-width: 640px) {
+    h1#links {
+        font-size: 3em;
+    }
+    
     img.post {
         -webkit-filter: drop-shadow(1px 1px 0 black)
                         drop-shadow(-1px -1px 0 black);
