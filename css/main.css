@@ -15,7 +15,7 @@
 
 html {
 	background: white url("../img/animspace.gif") repeat;
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
 }
 
@@ -105,6 +105,58 @@ li.lista {
     margin: 20px auto;
 }
 
+/* Tabela de botões */
+
+div.glitchbox-index {
+    position: fixed;
+    box-shadow: 4px 4px 0 #0000ff, 8px 8px 0 #00ffff, 12px 12px 0 #ff00ff;
+    border-radius: 2px;
+    background-color: #fff8dc;
+    width: 25%;
+    padding: 1%;
+    margin: 0.65% auto;
+    margin-top: 2%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.glitchbox-index#pagebutton {
+    left: 40%;
+    width: 10%;
+    margin-top: 1%;
+}
+
+div.glitchbox-index#buttons {
+    right: 20%;
+}
+
+.afiliados {
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    font-family: 'Chicago', sans-serif;
+    font-weight: lighter;
+}
+
+.buttons-table td {
+    margin: auto 50px;
+    width: 89px;
+    overflow-wrap: anywhere;
+    text-align: center;
+}
+
+.button-name {
+    font-family: 'Chicago', sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+div a img {
+    display: block;
+    margin: auto;
+}
+
 @media screen and (max-width: 640px) {
     #welcome {
         width: 50%;
@@ -112,6 +164,10 @@ li.lista {
 
     #wrapper {
         width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 10px 3% 10px 3%;
     }
 
     .title {
@@ -124,6 +180,32 @@ li.lista {
     
     .textinho {
         font-size: 0.7em;
+    }
+
+    div.glitchbox-index {
+        position: relative;
+    }
+
+    div.glitchbox-index#buttons {
+        right: 0;
+        width: 60%;
+        top: 200px;
+    }
+
+    div.glitchbox-index#pagebutton {
+        left: 0;
+        width: 30%;
+        top: 230px;
+    }
+
+    .afiliados {
+        margin: auto;
+        margin-bottom: 10px;
+        font-size: 0.9em;
+    }
+
+    body {
+        padding-bottom: 300px;
     }
 }
 

@@ -4,7 +4,7 @@
     top: 25%;
     left: 15%;
     z-index: 3;
-    position: fixed;
+    position: absolute;
 }
 
 .window#edits {
@@ -13,7 +13,7 @@
     top: 30%;
     right: 15%;
     z-index: 3;
-    position: fixed;
+    position: absolute;
 }
 
 .window#links {
@@ -22,7 +22,7 @@
     bottom: 10%;
     left: 25%;
     z-index: 3;
-    position: fixed;
+    position: absolute;
 }
 
 @media screen and (max-width: 640px) {
@@ -40,7 +40,7 @@
         top: 17%;
         left: 5%;
         z-index: 3;
-        position: fixed;
+        position: absolute;
     }
     
     .window#links {
@@ -51,15 +51,15 @@
         left: auto;
         right: 3%;
         z-index: 3;
-        position: fixed;
+        position: absolute;
     }
 
     .window#edits {
         width: 35%;
         margin: 0 0 0 0;
-        top: 72%;
+        top: 560px;
         right: 40%;
         z-index: 3;
-        position: fixed;
+        position: absolute;
     }
 }
