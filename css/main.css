@@ -6,6 +6,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: PixelOperatorMonoRegular;
+    src: url("./font/pixel-operator-mono.ttf") format('truetype');
+    font-style: normal;
+}
+
 .blurb li
 /* , h2 */
 {
@@ -104,6 +110,65 @@ li.lista {
     display:block;
     margin: 20px auto;
 }
+
+#options {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 2px;
+    box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.7);
+    background-color: black;
+    z-index: 99;
+    color: white;
+    font-family: 'PixelOperatorMonoRegular';
+    text-align: center;
+}
+
+#options p {
+    margin: auto;
+    font-size: 2em;
+}
+
+.langbutton {
+    /* float: right; */
+    margin: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border: 2px solid white;
+    background: black;
+    transition: 0.3s;
+    /* width: 100px; */
+    padding: 2px 5px;
+    text-align: center; 
+}
+
+.langbutton:hover {
+    cursor: pointer;
+    background: white;
+}
+
+.langbutton a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em !important;
+}
+
+.langbutton a:hover {
+    cursor: pointer;
+    color: black;
+}
+
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.2em;
+    display: inline;
+    /* vertical-align: middle; */
+ }
 
 /* Tabela de botões */
 
