@@ -5,21 +5,35 @@
     <div style="text-align: right">
         <img class="post" src={{post.img}} />
     </div>
-    <a class="post" href={{ post.link }}>
-        <div class="post">
+    <div class="post">
+        <a class="post" href={{ post.link }}>
             <h4 class="post">{{ post.day }} - {{ post.title }}</h4>
             <p class="post">{{ post.text }}</p>
-        </div>
-    </a>
+        </a>
+        <a class="commentbutton" onclick="show_comments('{{post.link}}')">Comentários</a>
+        <div class="commentbox" id={{post.link}} style="display: none"></div>
+    </div>
     {% else %}
     <div style="text-align: left">
         <img class="post" src={{post.img}} />
     </div>
-    <a class="post" href={{ post.link }}>
-        <div class="post">
+    <div class="post">
+        <a class="post" href={{ post.link }}>
             <h4 class="post">{{ post.day }} - {{ post.title }}</h4>
             <p class="post">{{ post.text }}</p>
-        </div>
-    </a>
+        </a>
+        <a class="commentbutton" onclick="show_comments('{{post.link}}')">Comentários</a>
+        <div class="commentbox" id={{post.link}} style="display: none"></div>
+    </div>
     {% endif %}
+    <script>function show_comments(id) {
+        var x = document.getElementById(id);
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }</script>
+    <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+    <script>commentBox('5700388850237440-proj')</script>
 </div>

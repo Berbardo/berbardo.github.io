@@ -168,7 +168,7 @@ img.emoji {
     vertical-align: -0.2em;
     display: inline;
     /* vertical-align: middle; */
- }
+}
 
 /* Tabela de botões */
 
@@ -389,6 +389,7 @@ div.post {
     background: #dbffff;
     box-shadow:5px 5px #38ffcc;
     z-index: 5;
+    overflow: auto;
 }
 
 div.postbox:nth-child(odd) div.post {
@@ -459,6 +460,15 @@ div.postbox:nth-child(even) img.post {
         font-size: 0.7rem;
         line-height: 1.2em;
     }
+}
+
+.commentbutton {
+    margin-top: 10px;
+    text-align: right;
+    float:right;
+    position: relative;
+    color: gray;
+    cursor: pointer;
 }
 
 /* Windows */
