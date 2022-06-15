@@ -1,20 +1,10 @@
 {% assign loopindex = forloop.index | modulo: 2 %}
 <div class="postbox">
     {% if loopindex == 1 %}
-
     <div style="text-align: right">
-        <img class="post" src={{post.img}} />
-    </div>
-    <div class="post">
-        <a class="post" href={{ post.link }}>
-            <h4 class="post">{{ post.day }} - {{ post.title }}</h4>
-            <p class="post">{{ post.text }}</p>
-        </a>
-        <a class="commentbutton" onclick="show_comments('{{post.link}}')">Comentários</a>
-        <div class="commentbox" id={{post.link}} style="display: none"></div>
-    </div>
     {% else %}
     <div style="text-align: left">
+    {% endif %}
         <img class="post" src={{post.img}} />
     </div>
     <div class="post">
@@ -22,10 +12,10 @@
             <h4 class="post">{{ post.day }} - {{ post.title }}</h4>
             <p class="post">{{ post.text }}</p>
         </a>
-        <a class="commentbutton" onclick="show_comments('{{post.link}}')">Comentários</a>
+        {% assign new_var = post.link | append: "button" %}
+        <a class="commentbutton" id={{new_var}} onclick="show_comments('{{post.link}}')">Comentários</a>
         <div class="commentbox" id={{post.link}} style="display: none"></div>
     </div>
-    {% endif %}
     <script>function show_comments(id) {
         var x = document.getElementById(id);
         if (x.style.display === "none") {
@@ -39,8 +29,12 @@
         onCommentCount(count) {
             // use the count however you wish.
             var id = "{{post.link}}";
-            var commentCount = document.getElementById(str(id)).getElementsByClassName("commentbutton")[0];
-            commentCount.innerText = "Comentários (" + str(count) + ")";
+            var name = id + "button"
+            var commentButton = document.getElementById(name);
+            console.log(commentButton);
+            console.log(commentButton.innerText);
+
+            commentButton.innerText = "Comentários (" + `${count}` + ")";
         }
     });</script>
 </div>
