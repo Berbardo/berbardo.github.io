@@ -119,8 +119,8 @@ li.lista {
     padding: 15px;
     border: 2px solid white;
     border-radius: 2px;
-    box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.7);
     background-color: black;
+    box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.7);
     z-index: 99;
     color: white;
     font-family: 'PixelOperatorMonoRegular';

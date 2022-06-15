@@ -1,3 +1,3 @@
 function sumir() {
-    document.getElementById("options").style = "display: none";
+    document.getElementById("index-overlay").style = "display: none";
 }
