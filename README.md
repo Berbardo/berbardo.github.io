@@ -1,8 +1,8 @@
-# berbardo.github.io
+# Página do Berbardo
 
 Meu site pessoal!
 
-Acesse em https://berbardo.github.io ou https://berbardo.neocities.org.
+**Acesse em https://berbardo.neocities.org.** (Também disponível em https://berbardo.github.io)
 
 <br/>
 
