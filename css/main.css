@@ -173,27 +173,31 @@ img.emoji {
 /* Tabela de botões */
 
 div.glitchbox-index {
-    position: fixed;
+    position: absolute;
+    width: 25%;
+    margin: 0.65% auto;
+    margin-top: 2%;
+    margin-bottom: 20px;
+}
+
+div.glitchbox-wrapper {
     box-shadow: 4px 4px 0 #0000ff, 8px 8px 0 #00ffff, 12px 12px 0 #ff00ff;
     border-radius: 2px;
     background-color: #fff8dc;
-    width: 25%;
-    padding: 1%;
-    margin: 0.65% auto;
-    margin-top: 2%;
+    padding: 10px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 div.glitchbox-index#pagebutton {
-    left: 40%;
+    left: 35%;
     width: 10%;
     margin-top: 1%;
 }
 
 div.glitchbox-index#buttons {
-    right: 20%;
+    right: 25%;
 }
 
 .afiliados {
