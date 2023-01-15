@@ -36,15 +36,10 @@ plugins:
 
 collections:
   weblinks:
-    output: true
   musiclinks:
-    output: true
   videolinks:
-    output: true
   gamelinks:
-    output: true
   codelinks:
-    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
