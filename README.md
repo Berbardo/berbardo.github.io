@@ -1,4 +1,4 @@
-# Página do Berbardo
+# Berbardo
 
 Meu site pessoal!
 
