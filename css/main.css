@@ -198,6 +198,7 @@ div.glitchbox-index#pagebutton {
 
 div.glitchbox-index#buttons {
     right: 25%;
+    height: max-content;
 }
 
 .afiliados {
@@ -208,8 +209,18 @@ div.glitchbox-index#buttons {
     font-weight: lighter;
 }
 
+.buttons-table {
+    background-color: transparent;
+}
+
+.buttons-table tr {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .buttons-table td {
-    margin: auto 50px;
+    flex: 1;
+    margin: 0 5px 50px 5px;
     width: 89px;
     overflow-wrap: anywhere;
     text-align: center;
@@ -257,8 +268,8 @@ div a img {
 
     div.glitchbox-index#buttons {
         right: 0;
-        width: 60%;
-        top: 200px;
+        width: 80%;
+        top: 250px;
     }
 
     div.glitchbox-index#pagebutton {
