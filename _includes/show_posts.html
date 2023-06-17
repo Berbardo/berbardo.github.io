@@ -12,11 +12,11 @@
             <h4 class="post">{{ post.day }} - {{ post.title }}</h4>
             <p class="post">{{ post.text }}</p>
         </a>
-        {% assign new_var = post.link | append: "button" %}
+        <!-- {% assign new_var = post.link | append: "button" %}
         <a class="commentbutton" id={{new_var}} onclick="show_comments('{{post.link}}')">Comentários</a>
-        <div class="commentbox" id={{post.link}} style="display: none"></div>
+        <div class="commentbox" id={{post.link}} style="display: none"></div> -->
     </div>
-    <script>function show_comments(id) {
+    <!-- <script>function show_comments(id) {
         var x = document.getElementById(id);
         if (x.style.display === "none") {
           x.style.display = "block";
@@ -36,5 +36,5 @@
 
             commentButton.innerText = "Comentários (" + `${count}` + ")";
         }
-    });</script>
+    });</script> -->
 </div>

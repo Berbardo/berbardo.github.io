@@ -191,14 +191,28 @@ div.glitchbox-wrapper {
 }
 
 div.glitchbox-index#pagebutton {
-    left: 35%;
+    left: 47%;
     width: 10%;
+    min-width: 120px;
     margin-top: 1%;
+    height: max-content;
 }
 
 div.glitchbox-index#buttons {
-    right: 25%;
+    right: 15%;
     height: max-content;
+}
+
+div.glitchbox-index#comments {
+    margin-top: 2%;
+    left: 12%;
+    width: 30%;
+    margin-bottom: 3%;
+}
+
+div.glitchcommentbox {
+    max-height: 40vh;
+    overflow: auto;
 }
 
 .afiliados {
@@ -269,7 +283,18 @@ div a img {
     div.glitchbox-index#buttons {
         right: 0;
         width: 80%;
+        top: 240px;
+    }
+
+    div.glitchbox-index#comments {
+        left: 0;
+        width: 80%;
         top: 250px;
+    }
+    
+    div.glitchcommentbox {
+        max-height: 70vh;
+        overflow: auto;
     }
 
     div.glitchbox-index#pagebutton {
@@ -314,7 +339,7 @@ div.boxcontainer {
 }
 
 .boxcontainer > .glitchbox {
-    flex: 0 0 47%;
+    flex: 0 0 90%;
     text-align: justify;
 }
 
@@ -400,6 +425,7 @@ div.post {
     position: relative;
     margin: 0 0 40px 80px;
     padding: 1em;
+    padding-bottom: 2em;
     border: 1px solid black;
     background: #dbffff;
     box-shadow:5px 5px #38ffcc;

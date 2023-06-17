@@ -43,7 +43,6 @@
                 </a>
             </div>
         </div>
-
         
         <div class="glitchbox-index" id="buttons">
             <div class="glitchbox-wrapper">
@@ -95,6 +94,29 @@
                 </tbody></table>
             </div>
             <br/>
+        </div>
+
+
+        <div class="glitchbox-index" id="comments">
+            <div class="glitchbox-wrapper">
+                <h3 class="afiliados">Comentários</h3>
+                <div class="glitchcommentbox">
+                    <div class="commentbox" id="index" style="display: block"></div>
+                </div>
+                <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+                <script>commentBox('5700388850237440-proj', {
+                    onCommentCount(count) {
+                        // use the count however you wish.
+                        var id = "index";
+                        var name = id + "button"
+                        var commentButton = document.getElementById(name);
+                        console.log(commentButton);
+                        console.log(commentButton.innerText);
+            
+                        commentButton.innerText = "Comentários (" + `${count}` + ")";
+                    }
+                });</script>
+            </div>
         </div>
 
         <script>
