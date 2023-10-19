@@ -191,7 +191,7 @@ div.glitchbox-wrapper {
 }
 
 div.glitchbox-index#pagebutton {
-    left: 47%;
+    left: 35%;
     width: 10%;
     min-width: 120px;
     margin-top: 1%;
@@ -199,7 +199,7 @@ div.glitchbox-index#pagebutton {
 }
 
 div.glitchbox-index#buttons {
-    right: 15%;
+    right: 25%;
     height: max-content;
 }
 
