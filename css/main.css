@@ -54,6 +54,13 @@ li.lista {
     color: #333;
 }
 
+
+.glitchbox li.lista {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: #333;
+}
+
 #wrapper {
     width: 70%;
     margin: auto;
@@ -448,7 +455,7 @@ img.post {
     filter: drop-shadow(1px 1px 0 black) 
             drop-shadow(-1px -1px 0 black);
     filter: drop-shadow(5px -5px 2px #6338ff);
-    height: 200px;
+    height: 300px;
     margin: 0 0 -60px 0;
     z-index: 1;
 }

@@ -1,0 +1,47 @@
+---
+layout: gallery
+title: Foda
+permalink: /foda/
+---
+
+<div class="blurb">
+
+    <h1 class="side-text">
+        <span>f</span>
+        <span>o</span>
+        <span>d</span>
+        <span>a</span>
+    </h1>
+
+    <h1 class="side-text">
+        <span>f</span>
+        <span>o</span>
+        <span>d</span>
+        <span>a</span>
+    </h1>
+
+    <div class="art-row">
+        <div class="art-column">
+            {% for image in site.static_files %}
+                {% if image.path contains 'foda/col1' %}
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="noise" />
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="art-column">
+            {% for image in site.static_files %}
+                {% if image.path contains 'foda/col2' %}
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="art-column">
+            {% for image in site.static_files %}
+                {% if image.path contains 'foda/col3' %}
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div><!-- /.blurb -->
+
