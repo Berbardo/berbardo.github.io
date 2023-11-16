@@ -1,0 +1,31 @@
+---
+layout: default
+title: berbardo
+permalink: /
+---
+
+<div class="blurb">
+
+    <img id="splash-screen" src="img/buttons/bernardo.png" style="width:100%; height:100%; top: 0; left: 0; position: absolute; z-index: 100;"/>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+          setTimeout(function(){
+            setInterval(hideImage, 1);
+          },1);
+        });
+        function hideImage(){
+          document.getElementById( "splash-screen" ).style.display = "none" ;
+        }
+        function showImage(){
+          document.getElementById( "splash-screen" ).style.display = "block" ;
+        }
+      </script>
+
+    <script type="text/javascript">
+        var url ='/home';
+        var delay = 4;
+        window.setTimeout ('parent.location.replace(url)', delay);
+    </script>
+
+</div><!-- /.blurb -->
