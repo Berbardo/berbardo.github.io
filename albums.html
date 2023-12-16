@@ -1,0 +1,56 @@
+---
+layout: gallery
+title: Meus Álbums de 2023
+permalink: /albums
+---
+
+<div class="blurb">
+
+    <h1 class="side-text">
+        <span>2</span>
+        <span>0</span>
+        <span>2</span>
+        <span>3</span>
+    </h1>
+
+    <h1 class="side-text">
+        <span>2</span>
+        <span>0</span>
+        <span>2</span>
+        <span>3</span>
+    </h1>
+
+    <div class="art-row">
+        <div class="art-column">
+            {% for image in site.static_files %}
+                {% if image.path contains 'albums' %}
+                    {% assign loopindex = forloop.index | modulo: 3 %}
+                    {% if loopindex == 0 %}
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="noise" />
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="art-column">
+            {% for image in site.static_files %}
+                {% if image.path contains 'albums' %}
+                    {% assign loopindex = forloop.index | modulo: 3 %}
+                    {% if loopindex == 1 %}
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="noise" />
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="art-column">
+            {% for image in site.static_files %}
+                {% if image.path contains 'albums' %}
+                    {% assign loopindex = forloop.index | modulo: 3 %}
+                    {% if loopindex == 2 %}
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="noise" />
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div><!-- /.blurb -->
+

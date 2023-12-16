@@ -48,9 +48,9 @@ body {
     pointer-events: none;
 }
 
-li.lista {
+.lista {
     font-size: 1.5em;
-    line-height: 0.4em;
+    line-height: 1.5em;
     color: #333;
 }
 
