@@ -113,6 +113,19 @@ li.lista {
 	background-size: 40px;
 }
 
+
+li.listinha {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: #333;
+    margin-left: 1em;
+    font-family: 'PixelOperatorMonoRegular';
+}
+
+p.lista {
+    margin: 0 1em 1em 1em;
+}
+
 .construction {
     display:block;
     margin: 20px auto;
@@ -205,6 +218,14 @@ div.glitchbox-index#pagebutton {
     height: max-content;
 }
 
+div.glitchbox-index#todo {
+    left: 25%;
+    width: 20%;
+    min-width: 120px;
+    margin-top: 10%;
+    height: max-content;
+}
+
 div.glitchbox-index#buttons {
     right: 25%;
     height: max-content;
@@ -289,27 +310,30 @@ div a img {
         position: relative;
     }
 
+    div.glitchbox-index#pagebutton {
+        left: 27%;
+        right: 0;
+        width: 30%;
+        top: 50px;
+        margin-top: 0;
+    }
+
+    div.glitchbox-index#todo {
+        left: 0;
+        right: 0;
+        width: 80%;
+        top: 70px;
+    }
+
     div.glitchbox-index#buttons {
         right: 0;
         width: 80%;
-        top: 240px;
-    }
-
-    div.glitchbox-index#comments {
-        left: 0;
-        width: 80%;
-        top: 250px;
+        top: 100px;
     }
     
     div.glitchcommentbox {
         max-height: 70vh;
         overflow: auto;
-    }
-
-    div.glitchbox-index#pagebutton {
-        left: 0;
-        width: 30%;
-        top: 230px;
     }
 
     .afiliados {
