@@ -37,6 +37,7 @@ plugins:
 collections:
   musiclinks:
   videolinks:
+  blogentries:
   # gamelinks:
   # codelinks:
   # weblinks:
