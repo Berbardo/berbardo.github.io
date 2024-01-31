@@ -1,39 +1,18 @@
 {% assign loopindex = forloop.index | modulo: 2 %}
 <div class="postbox">
-    {% if loopindex == 1 %}
-    <div style="text-align: right">
-    {% else %}
-    <div style="text-align: left">
-    {% endif %}
-    </div>
     <div class="post">
-        <a class="post" href={{ post.link }}>
+        {% if loopindex == 0 %}
+        <div style="text-align: right;">
+        {% else %}
+        <div style="text-align: left;">
+        {% endif %}
+            {% if post.img %}
+            <img class="post" src={{post.img}} style="position:absolute"/>
+            {% endif %}
+        </div>
+        <a class="post">
             <h4 class="post">{{ post.day }} - {{ post.title }}</h4>
             <p class="post">{{ post.text }}</p>
         </a>
-        <!-- {% assign new_var = post.link | append: "button" %}
-        <a class="commentbutton" id={{new_var}} onclick="show_comments('{{post.link}}')">Comentários</a>
-        <div class="commentbox" id={{post.link}} style="display: none"></div> -->
     </div>
-    <!-- <script>function show_comments(id) {
-        var x = document.getElementById(id);
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }</script>
-    <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-    <script>commentBox('5700388850237440-proj', {
-        onCommentCount(count) {
-            // use the count however you wish.
-            var id = "{{post.link}}";
-            var name = id + "button"
-            var commentButton = document.getElementById(name);
-            console.log(commentButton);
-            console.log(commentButton.innerText);
-
-            commentButton.innerText = "Comentários (" + `${count}` + ")";
-        }
-    });</script> -->
 </div>

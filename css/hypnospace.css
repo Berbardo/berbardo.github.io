@@ -52,3 +52,52 @@ h1#links {
 h4.post {
     font-family: "Hypnoverse";
 }
+
+div.post {
+    overflow: visible;
+}
+
+p.post {
+    text-align: justify;
+}
+
+div.postbox:nth-child(odd) h4.post {
+    margin-left: 15px;
+}
+
+div.postbox:nth-child(odd) p.post {
+    margin-left: 15px;
+}
+
+div.postbox:nth-child(even) h4.post {
+    margin-right: 40px;
+}
+
+div.postbox:nth-child(even) p.post {
+    margin-right: 40px;
+}
+
+div.postbox:nth-child(odd) img.post {
+    margin: auto auto auto -200px;
+    top: 0;
+    bottom: 0;
+}
+
+div.postbox:nth-child(even) img.post {
+    margin: auto auto auto -30px;
+    top: 0;
+    bottom: 0;
+}
+
+img.post {
+    position: relative;
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+                    drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(1px 1px 0 black) 
+            drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(5px -5px 2px #6338ff);
+    width: 200px;
+    height: auto;
+    margin: 0 0 -60px 0;
+    z-index: 50;
+}
