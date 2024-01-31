@@ -42,6 +42,16 @@ collections:
   # codelinks:
   # weblinks:
 
+defaults:
+  - scope:
+      path: "img/albums"
+    values:
+      album: true
+  - scope:
+      path: "img/foda"
+    values:
+      foda: true
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
