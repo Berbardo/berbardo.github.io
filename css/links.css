@@ -1,0 +1,207 @@
+@font-face {
+    font-family: Hypnoverse;
+    src: url("./font/hypnoverse.ttf") format('truetype');
+    font-style: normal;
+}
+
+h1#links {
+    /* font-family: 'Chicago'; */
+    font-weight: bolder;
+    color: transparent;
+    display: block;
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+    letter-spacing: 0.05em;
+    height: 100%;
+    /* text-shadow: #FC0 1px 0 10px; */
+    background: linear-gradient(
+        #F7DF57 31%,
+        #E26F68 31%,
+        #E26F68 45%,
+        #947AF4 45%,
+        #947AF4 55%,
+        #8FA1F4 55%,
+        #8FA1F4 58%,
+        #947AF4 58%,
+        #947AF4 61%,
+        #8FA1F4 61%
+    );
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-stroke: 1px #000;
+    filter: drop-shadow(1px 1px 1px #000);
+}
+
+a.post {
+    text-decoration: none;
+}
+
+h4.post {
+    margin: 0 0 10px 0;
+    font-family: 'Chicago', sans-serif;
+    font-size: 1.1rem;
+    color: black;
+}
+
+p.post {
+    margin: 0 0 0 0;
+    font-family: 'Verdana', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.4em;
+    color: black;
+    font-style: normal;
+    font-weight: lighter;
+    text-decoration: none !important;
+    text-align: justify;
+}
+
+div.post {
+    position: relative;
+    margin: 0 0 80px 80px;
+    padding: 1em;
+    padding-bottom: 2em;
+    border: 1px solid black;
+    background: #dbffff;
+    box-shadow:5px 5px #38ffcc;
+    z-index: 5;
+    overflow: visible;
+}
+
+div.postbox:nth-child(odd) div.post {
+    margin: 0 200px 80px 350px;
+}
+
+div.postbox:nth-child(even) div.post {
+    margin: 0 350px 80px 200px;
+}
+
+div.postbox:nth-child(odd) h4.post {
+    margin-right: 250px;
+}
+
+div.postbox:nth-child(odd) p.post {
+    margin-right: 250px;
+}
+
+div.postbox:nth-child(even) h4.post {
+    margin-left: 250px;
+}
+
+div.postbox:nth-child(even) p.post {
+    margin-left: 250px;
+}
+
+img.post {
+    position: absolute;
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+                    drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(1px 1px 0 black) 
+            drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(5px -5px 2px #6338ff);
+    width: 250px;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    margin: 0 0 -60px 0;
+    z-index: 50;
+}
+
+div.postbox:nth-child(odd) img.post {
+    margin: auto auto auto -188px;
+}
+
+div.postbox:nth-child(even) img.post {
+    margin: auto auto auto -13px;
+}
+
+@media screen and (max-width: 640px) {
+    h1#links {
+        font-size: 3em;
+    }
+    
+    img.post {
+        -webkit-filter: drop-shadow(1px 1px 0 black)
+                        drop-shadow(-1px -1px 0 black);
+        filter: drop-shadow(1px 1px 0 black) 
+                drop-shadow(-1px -1px 0 black);
+        filter: drop-shadow(5px -5px 2px #6338ff);
+        /* height: 200px; */
+        width: 70%;
+        /* width: auto; */
+        top: 0;
+        bottom: 0;
+        margin: 0 0 -60px 0;
+        z-index: 0;
+        position: relative;
+    }
+    
+    div.postbox:nth-child(odd) div.post {
+        margin: 70% 0 40px 10% !important;
+        box-shadow:5px 5px #38ffcc;
+        z-index: 5;
+    }
+    
+    div.postbox:nth-child(even) div.post {
+        margin: 70% 10% 40px 0% !important;
+        box-shadow:5px 5px #38ffcc;
+        z-index: 5;
+    }
+
+    .body {
+        width: 90%;
+    }
+
+    h4.post {
+        font-size: 0.9rem;
+    }
+    
+    p.post {
+        font-size: 0.7rem;
+        line-height: 1.2em;
+    }
+
+    div.postbox:nth-child(odd) h4.post {
+        margin-right: 0px;
+    }
+    
+    div.postbox:nth-child(odd) p.post {
+        margin-right: 0px;
+    }
+    
+    div.postbox:nth-child(even) h4.post {
+        margin-left: 0px;
+    }
+    
+    div.postbox:nth-child(even) p.post {
+        margin-left: 0px;
+    }
+
+    div.postbox:nth-child(odd) img.post {
+        margin: -70% -12px auto -188px;
+    }
+    
+    div.postbox:nth-child(even) img.post {
+        margin: -70% auto auto -13px;
+    }
+
+    body {
+        padding-bottom: 0px;
+    }
+}
+
+.title-bar {
+    background: linear-gradient(rgb(201, 224, 248) 0%, rgb(140, 144, 243) 50%);
+}
+
+.hypno-bg {
+    image-rendering: pixelated;
+    background-image: url("../img/hypno_bg4.png");
+    filter: brightness(0.95) saturate(0.9);
+    background-repeat: repeat;
+    background-size: auto 100%;
+    background-attachment: fixed;
+    /* background-size: 100%; */
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
