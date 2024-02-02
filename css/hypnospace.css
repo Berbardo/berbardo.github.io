@@ -63,18 +63,22 @@ p.post {
 
 div.postbox:nth-child(odd) h4.post {
     margin-left: 15px;
+    margin-right: 0px;
 }
 
 div.postbox:nth-child(odd) p.post {
     margin-left: 15px;
+    margin-right: 0px;
 }
 
 div.postbox:nth-child(even) h4.post {
     margin-right: 40px;
+    margin-left: 0px;
 }
 
 div.postbox:nth-child(even) p.post {
     margin-right: 40px;
+    margin-left: 0px;
 }
 
 div.postbox:nth-child(odd) img.post {
