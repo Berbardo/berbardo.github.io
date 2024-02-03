@@ -247,6 +247,11 @@ div.glitchbox-index#collage {
     height: max-content;
 }
 
+#guestbook-frame {
+    height: 600px;
+    width: 100%;
+}
+
 div.glitchcommentbox {
     max-height: 40vh;
     overflow: auto;
@@ -338,6 +343,35 @@ div a img {
         right: 0;
         width: 80%;
         top: 100px;
+    }
+
+    div.glitchbox-index#guestbook {
+        margin-top: 40%;
+        left: 0;
+        right: 0;
+        width: 80%;
+        margin-bottom: 3%;
+        height: max-content;
+    }
+
+    div.glitchbox-index#collage {
+        margin-top: 20%;
+        left: 0;
+        right: 0;
+        width: 80%;
+        margin-bottom: 3%;
+        height: max-content;
+    }
+
+    #guestbook-frame {
+        height: 600px;
+        width: 200%;
+        margin-left: -50%;
+        margin-top: -150px;
+        margin-bottom: -150px;
+        margin-right: -50%;
+        -webkit-transform:scale(0.5);
+        -moz-transform:scale(0.5);
     }
     
     div.glitchcommentbox {

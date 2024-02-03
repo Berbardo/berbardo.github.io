@@ -11,3 +11,5 @@ collage_generator = CollageGenerator(lastfm_api_key=API_KEY, lastfm_api_secret=A
 
 image = collage_generator.generate(entity="album", username="berbardo8", cols=4, rows=4, period="1month")
 image.save("img/collage.png", "png")
+
+print("Successfully saved collage!")
