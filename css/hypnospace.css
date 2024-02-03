@@ -36,19 +36,6 @@ h1#links {
     filter: drop-shadow(1px 1px 1px #000);
 }
 
-.hypno-bg {
-    image-rendering: pixelated;
-    background-image: url("../img/hypno_bg4.png");
-    filter: brightness(0.95) saturate(0.9);
-    background-repeat: repeat;
-    background-size: auto 100%;
-    background-attachment: fixed;
-    /* background-size: 100%; */
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-}
-
 h4.post {
     font-family: "Hypnoverse";
 }

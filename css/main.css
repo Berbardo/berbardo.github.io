@@ -140,7 +140,7 @@ p.lista {
     border: 2px solid white;
     border-radius: 2px;
     background-color: black;
-    box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 0px 10000px rgba(0, 0, 0, 0.7);
     z-index: 99;
     color: white;
     font-family: 'PixelOperatorMonoRegular';
@@ -231,11 +231,20 @@ div.glitchbox-index#buttons {
     height: max-content;
 }
 
-div.glitchbox-index#comments {
-    margin-top: 2%;
-    left: 12%;
+div.glitchbox-index#guestbook {
+    margin-top: 20%;
+    left: 10%;
+    width: 40%;
+    margin-bottom: 3%;
+    height: max-content;
+}
+
+div.glitchbox-index#collage {
+    margin-top: 20%;
+    right: 15%;
     width: 30%;
     margin-bottom: 3%;
+    height: max-content;
 }
 
 div.glitchcommentbox {
