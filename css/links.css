@@ -204,3 +204,15 @@ div.postbox:nth-child(even) img.post {
     height: 100%;
     width: 100%;
 }
+
+div.post-blog {
+    position: relative;
+    margin: 0 200px 80px 200px !important;
+    padding: 1em;
+    padding-bottom: 2em;
+    border: 1px solid black;
+    background: #FFEEC2;
+    box-shadow:5px 5px #FF55CC;
+    z-index: 5;
+    overflow: visible;
+}
