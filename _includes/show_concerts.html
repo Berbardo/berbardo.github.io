@@ -1,0 +1,26 @@
+{% assign loopindex = forloop.index | modulo: 2 %}
+<div class="postbox">
+    {% if loopindex == 0 %}
+    <div style="text-align: right">
+    {% else %}
+    <div style="text-align: left">
+    {% endif %}
+        {% if post.link %}
+        <iframe class="concert" 
+            src={{post.link}} frameborder="0" allowfullscreen
+            allow="accelerometer clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        > </iframe>
+        {% endif %}
+    </div>
+    <div class="post concert">
+        {% if loopindex == 1 %}
+        <div style="text-align: right">
+        {% else %}
+        <div style="text-align: left">
+        {% endif %}
+            <img class="post" src={{post.img}} />
+        </div>
+        <h4 class="post">{{ post.day }} - {{ post.title }}</h4>
+        <p class="post">{{ post.text }}</p>
+    </div>
+</div>
