@@ -516,6 +516,7 @@ h1.side-text {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
+    margin-top: 50px;
 }
 
 /* Create four equal columns that sits next to each other */
