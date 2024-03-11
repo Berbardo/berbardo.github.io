@@ -26,17 +26,17 @@ permalink: /albums
         <div class="art-column">
             {% assign album_images = site.static_files | where: "album", true %}
             {% for image in album_images %}{% assign loopindex = forloop.index | modulo: 3 %}{% if loopindex == 0 %}
-            <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="noise" />
+            <img loading="lazy" src="{{ site.baseurl }}{{ image.path }}" alt="image" class="noise" />
             {% endif %}{% endfor %}
         </div>
         <div class="art-column">
             {% for image in album_images %}{% assign loopindex = forloop.index | modulo: 3 %}{% if loopindex == 1 %}
-            <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="noise" />
+            <img loading="lazy" src="{{ site.baseurl }}{{ image.path }}" alt="image" class="noise" />
             {% endif %}{% endfor %}
         </div>
         <div class="art-column">
             {% for image in album_images %}{% assign loopindex = forloop.index | modulo: 3 %}{% if loopindex == 2 %}
-            <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="noise" />
+            <img loading="lazy" src="{{ site.baseurl }}{{ image.path }}" alt="image" class="noise" />
             {% endif %}{% endfor %}
         </div>
     </div>
