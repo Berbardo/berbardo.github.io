@@ -9,6 +9,11 @@
             {% if post.img %}
             <img loading="lazy" class="post" src={{post.img}} style="position:absolute"/>
             {% endif %}
+            {% if post.iframe %}
+            <video class="post" src={{post.iframe}} style="position:absolute" controls>
+                <source src={{post.iframe}} type="video/mp4">
+            </video>
+            {% endif %}
         </div>
         <a class="post">
             <h4 class="post">{{ post.day }} - {{ post.title }}</h4>

@@ -68,19 +68,19 @@ div.postbox:nth-child(even) p.post {
     margin-left: 0px;
 }
 
-div.postbox:nth-child(odd) img.post {
+div.postbox:nth-child(odd) img.post, div.postbox:nth-child(odd) video.post {
     margin: auto auto auto -200px;
     top: 0;
     bottom: 0;
 }
 
-div.postbox:nth-child(even) img.post {
+div.postbox:nth-child(even) img.post, div.postbox:nth-child(even) video.post {
     margin: auto auto auto -30px;
     top: 0;
     bottom: 0;
 }
 
-img.post {
+img.post, video.post {
     position: relative;
     -webkit-filter: drop-shadow(1px 1px 0 black)
                     drop-shadow(-1px -1px 0 black);
