@@ -6,9 +6,9 @@
 
             <title>{{ page.title }}</title>
             <!-- link to main stylesheet -->
-            <link rel="stylesheet" href="https://unpkg.com/98.css">
             <link rel="stylesheet" type="text/css" href="/css/main.css">
             <link rel="stylesheet" type="text/css" href="/css/index_windows.css">
+            <link rel="stylesheet" href="https://unpkg.com/98.css">
             <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 
             <script src="index.js"></script>
@@ -17,21 +17,27 @@
             
             <meta charset="utf-8" />
         </head>
-        {% include overlay.html %}
         {% include rainbow.html content="pagina do berbardo" %}
         {% include nav.html %}
         <div class="body">
-            <div id="wrapper">
-                <body>
+            <body>
+                <div id="wrapper">
+        
+                    <h1 class="title">Boas vindas ao meu site!</h1>
+                
+                    <p class="texto">Sinta-se a vontade para explorá-lo :]</p>
+                    
+                    <img loading="lazy" id="welcome" src="/img/welcome.webp" alt="Minha Figura" class="center">
+
+                    {% include footer.html %}
+                </div>
 
                     <div class="container">
                     
                     {{ content }}
                     
                     </div><!-- /.container -->
-                    {% include footer.html %}
-                </body>
-            </div>
+            </body>
         </div>
 
         <div class="glitchbox-index" id="pagebutton">
@@ -48,7 +54,6 @@
             <div class="glitchbox-wrapper">
                 <h3 class="afiliados">to-do list</h3>
                 <li class="listinha">atualizar página Sobre</li>
-                <li class="listinha">refazer shrine melhores álbuns 2023</li>
                 <li class="listinha">adicionar mais botões</li>
             </div>
         </div>

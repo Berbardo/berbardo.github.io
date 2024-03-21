@@ -62,7 +62,7 @@ body {
 }
 
 #wrapper {
-    width: 70%;
+    width: 50%;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -586,7 +586,7 @@ h1.page-column-title {
     font-family: 'Chicago', sans-serif;
     color: rgb(255, 255, 255);
 
-    font-size: 1.8vw;
+    font-size: 2.8vw;
     margin: 0 auto;
     margin-top: 25px;
     text-align: center;
