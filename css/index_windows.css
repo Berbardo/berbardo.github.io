@@ -41,6 +41,7 @@
         left: 5%;
         z-index: 3;
         position: absolute;
+        visibility: hidden;
     }
     
     .window#links {
@@ -61,5 +62,6 @@
         right: 40%;
         z-index: 3;
         position: absolute;
+        visibility: hidden;
     }
 }
