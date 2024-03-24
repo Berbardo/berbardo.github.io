@@ -114,18 +114,29 @@ img.post {
     z-index: 50;
 }
 
-iframe.concert {
+iframe.concert, video.concert {
     position: relative;
     -webkit-filter: drop-shadow(1px 1px 0 black)
                     drop-shadow(-1px -1px 0 black);
     filter: drop-shadow(1px 1px 0 black) 
             drop-shadow(-1px -1px 0 black);
     filter: drop-shadow(5px -5px 2px #6338ff);
-    width: 480px;
-    height: 270px;
-    bottom: 0px;
     margin: auto auto auto auto;
     z-index: 51;
+}
+
+iframe.concert {
+    height: 270px;
+    width: 480px;
+    bottom: 0px;
+}
+
+video.concert {
+    height: 350px;
+    top: 0px;
+    left: 150px;
+    float: left;
+    margin-right: 0;
 }
 
 div.postbox:nth-child(odd) img.post {

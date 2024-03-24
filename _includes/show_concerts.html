@@ -11,6 +11,11 @@
             allow="accelerometer clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         > </iframe>
         {% endif %}
+        {% if post.video %}
+        <video class="concert" src={{post.video}} controls>
+            <source src={{post.video}} type="video/mp4">
+        </video>
+        {% endif %}
     </div>
     <div class="post concert">
         {% if loopindex == 1 %}
