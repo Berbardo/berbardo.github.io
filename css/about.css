@@ -1,0 +1,93 @@
+.about-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.about-item {
+    backdrop-filter: blur(1px);
+    background-color: 0;
+    flex-grow: 1;
+    margin: 5px;
+}
+
+.about-img-div {
+    margin: 50px;
+    float: left;
+}
+
+.about-img {
+    height: 150px;
+}
+
+.about-img-text {
+    text-align: center;
+    color: white;
+    font-family: 'Chicago', sans-serif;
+}
+
+.about-text {
+    text-align: justify;
+    color: whitesmoke;
+    font-family: 'PixelOperatorMonoRegular', sans-serif;
+}
+
+.about-h2 {
+    color: white;
+    font-family: 'Chicago', sans-serif;
+    margin-top: 20px;
+}
+
+#about-item-1 {
+    border: 2px solid orange;
+    box-shadow: inset 0 1px 12px orangered;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#about-item-2 {
+    border: 2px solid Violet;
+    box-shadow: inset 0 1px 12px Orchid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#about-item-3 {
+    border: 2px solid Turquoise;
+    box-shadow: inset 0 1px 12px MediumTurquoise;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.social {
+    text-align: center;
+    margin: auto;
+}
+
+.social:hover {
+    width: 50%;
+}
+
+.twitter {
+    color:#00a9f1;
+}
+.instagram {
+    color:#c100f1;
+}
+.youtube {
+    color:orangered;
+}
+.lastfm {
+    color:#d51007;
+}
+.github {
+    color:#2f2f2f;
+}
+.email {
+    color:#e4e725;
+}

@@ -8,34 +8,6 @@
     background: linear-gradient(rgb(201, 224, 248) 0%, rgb(140, 144, 243) 50%);
 }
 
-h1#links {
-    /* font-family: 'Chicago'; */
-    font-weight: bolder;
-    color: transparent;
-    display: block;
-    text-align: center;
-    font-family: "Russo One", sans-serif;
-    letter-spacing: 0.05em;
-    height: 100%;
-    /* text-shadow: #FC0 1px 0 10px; */
-    background: linear-gradient(
-        #F7DF57 31%,
-        #E26F68 31%,
-        #E26F68 45%,
-        #947AF4 45%,
-        #947AF4 55%,
-        #8FA1F4 55%,
-        #8FA1F4 58%,
-        #947AF4 58%,
-        #947AF4 61%,
-        #8FA1F4 61%
-    );
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-stroke: 1px #000;
-    filter: drop-shadow(1px 1px 1px #000);
-}
-
 h4.post {
     font-family: "Hypnoverse";
 }
