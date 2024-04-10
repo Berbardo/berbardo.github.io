@@ -28,7 +28,18 @@
 .about-text {
     text-align: justify;
     color: whitesmoke;
-    font-family: 'PixelOperatorMonoRegular', sans-serif;
+    font-family: 'PixelOperatorMonoRegular', sans-serif !important;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.about-a {
+    color: HotPink;
+}
+
+.about-ul {
+    overflow:auto;
+    padding-left: 20px;
 }
 
 .about-h2 {
@@ -37,7 +48,12 @@
     margin-top: 20px;
 }
 
-#about-item-1 {
+.about-h3 {
+    color: white;
+    font-family: 'Chicago', sans-serif;
+}
+
+#about-item-me {
     border: 2px solid orange;
     box-shadow: inset 0 1px 12px orangered;
     grid-column-start: 1;
@@ -46,7 +62,16 @@
     grid-row-end: 3;
 }
 
-#about-item-2 {
+#about-item-neocities {
+    border: 2px solid whitesmoke;
+    box-shadow: inset 0 1px 12px Thistle;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#about-item-socials {
     border: 2px solid Violet;
     box-shadow: inset 0 1px 12px Orchid;
     grid-column-start: 1;
@@ -55,7 +80,7 @@
     grid-row-end: 5;
 }
 
-#about-item-3 {
+#about-item-interests {
     border: 2px solid Turquoise;
     box-shadow: inset 0 1px 12px MediumTurquoise;
     grid-column-start: 2;
