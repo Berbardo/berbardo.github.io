@@ -89,6 +89,21 @@
     grid-row-end: 5;
 }
 
+#pikachu-img {
+    border: 2px whitesmoke solid;
+    box-shadow: 0 1px 12px whitesmoke;
+}
+
+#kirby-img {
+    border: 2px lightcyan solid;
+    box-shadow: 0 1px 12px lightblue;
+    max-height: 200px;
+    max-width: 80%;
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
 .social {
     text-align: center;
     margin: auto;
@@ -115,4 +130,52 @@
 }
 .email {
     color:#e4e725;
+}
+
+.scanlines {
+    padding: 0;
+}
+
+@media screen and (max-width: 640px) {
+    .about-div {
+        margin: 40px;
+    }
+
+    .about-item {
+        padding-bottom: 15px;
+    }
+
+    .about-h2 {
+        margin-left: 15px;
+    }
+
+    .about-text {
+        margin-left: 15px;
+    }
+
+    #about-item-me {
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+    
+    #about-item-neocities {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    
+    #about-item-socials {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 5;
+        grid-row-end: 7;
+    }
+    
+    #about-item-interests {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 7;
+        grid-row-end: 9;
+    }
 }
