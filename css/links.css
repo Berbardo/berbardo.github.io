@@ -83,8 +83,12 @@ div.postbox:nth-child(odd) p.post {
     margin-right: 250px;
 }
 
-div.postbox:nth-child(odd) iframe.concert {
+div.postbox:nth-child(odd) iframe.concert, div.postbox:nth-child(odd) video.concert {
     margin-left: 350px;
+}
+
+div.postbox:nth-child(odd) video.concert-vertical {
+    margin-left: 300px;
 }
 
 div.postbox:nth-child(even) h4.post {
@@ -95,8 +99,12 @@ div.postbox:nth-child(even) p.post {
     margin-left: 250px;
 }
 
-div.postbox:nth-child(even) iframe.concert {
+div.postbox:nth-child(even) iframe.concert, div.postbox:nth-child(even) video.concert {
     margin-right: 350px;
+}
+
+div.postbox:nth-child(even) video.concert-vertical {
+    margin-right: 300px;
 }
 
 img.post {
@@ -114,7 +122,7 @@ img.post {
     z-index: 50;
 }
 
-iframe.concert, video.concert {
+iframe.concert, video.concert, video.concert-vertical {
     position: relative;
     -webkit-filter: drop-shadow(1px 1px 0 black)
                     drop-shadow(-1px -1px 0 black);
@@ -132,10 +140,14 @@ iframe.concert {
 }
 
 video.concert {
+    width: 480px;
+    bottom: 0px;
+}
+
+video.concert-vertical {
     height: 350px;
     top: 0px;
     left: 150px;
-    float: left;
     margin-right: 0;
 }
 
