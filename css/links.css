@@ -183,21 +183,21 @@ div.concert {
         z-index: 0;
         position: relative;
     }
-
-    div.concert {
-        margin-top: auto !important;
-    }
     
     div.postbox:nth-child(odd) div.post {
-        margin: 70% 0 40px 10% !important;
+        margin: 70% 0 40px 10%;
         box-shadow:5px 5px #38ffcc;
         z-index: 5;
     }
     
     div.postbox:nth-child(even) div.post {
-        margin: 70% 10% 40px 0% !important;
+        margin: 70% 10% 40px 0%;
         box-shadow:5px 5px #38ffcc;
         z-index: 5;
+    }
+
+    div.concert {
+        margin-top: 50% !important;
     }
 
     .body {
@@ -255,7 +255,7 @@ div.concert {
         width: 50%;
         height: auto;
         float: none !important;
-        margin: auto !important;
+        margin: auto auto -10% auto !important;
         left: auto;
         text-align: center;
     }
