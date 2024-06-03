@@ -78,6 +78,8 @@ jobs:
           API_KEY: ${{ secrets.NEKOWEB_API_KEY }}
           BUILD_DIR: './_site'
           DEPLOY_DIR: '/'
-          DELAY: '0.5'
+          CLEANUP: 'True'
+          DELAY: '2'
+          RETRY_DELAY: '3'
           NEKOWEB_PAGENAME: 'berbardo'
           ENCRYPTION_KEY: ${{ secrets.NEKOWEB_ENCRYPTION_KEY }}
