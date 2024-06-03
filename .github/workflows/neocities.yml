@@ -1,4 +1,4 @@
-name: Deploy to neocities
+name: Deploy to neocities and nekoweb
 
 # Controls when the workflow will run
 on:
@@ -71,3 +71,13 @@ jobs:
           dist_dir: _site # default is public
           # Delete orphaned files on neocities that don't exist in distDir
           cleanup: true
+
+      - name: Deploy to Nekoweb
+        uses: mp-pinheiro/nekoweb-deploy@main
+        with:
+          API_KEY: ${{ secrets.NEKOWEB_API_KEY }}
+          BUILD_DIR: './_site'
+          DEPLOY_DIR: '/'
+          DELAY: '0.5'
+          NEKOWEB_PAGENAME: 'berbardo'
+          ENCRYPTION_KEY: ${{ secrets.NEKOWEB_ENCRYPTION_KEY }}
