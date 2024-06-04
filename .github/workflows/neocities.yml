@@ -78,6 +78,6 @@ jobs:
           API_KEY: ${{ secrets.NEKOWEB_API_KEY }}
           BUILD_DIR: './_site'
           DEPLOY_DIR: '/'
-          CLEANUP: 'True'
+          CLEANUP: 'False'
           NEKOWEB_PAGENAME: 'berbardo'
           ENCRYPTION_KEY: ${{ secrets.NEKOWEB_ENCRYPTION_KEY }}
