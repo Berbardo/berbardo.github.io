@@ -53,73 +53,91 @@
         #c_rightButton - The right <button>
 */
 
+@font-face {
+    font-family: PixelOperatorMonoRegular;
+    src: url("./font/pixel-operator-mono.ttf") format('truetype');
+    font-style: normal;
+}
+
+
+#gooper {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
 /* Main */
 #c_widget_background {
-    background-image: url('/comment-widget-dark/sparkle-bg.gif'); /* F2U background provided by https://sadgrl.online/webmastery/downloads/tiledbgs */
+    background-image: url('/img/bg/guestbook_bg.png');
+    image-rendering: pixelated;
+    background-color: white; /* F2U background provided by https://sadgrl.online/webmastery/downloads/tiledbgs */
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 #c_widget {
     box-sizing: border-box;
     height: 100%;
+    width: 600px;
+    max-width: 80%;
+    margin: auto;
     overflow: auto;
-    margin-top: 20px;
     padding: 20px;
-    background-attachment: fixed;
-    font-family: 'Courier New';
+    font-family: 'PixelOperatorMonoRegular';
     font-size: 16px;
-    color: white;
+    color: black;
 }
 
 #c_widget button, #c_widget input[type=submit] {
     padding: 4px;
-    font-family: 'Courier New';
+    font-family: 'MS Gothic';
     text-decoration: none;
 	text-align: center;
     text-transform: uppercase;
-    background-color: black;
-    color: #B766FF;
-    border: 1px solid white;
+    margin-top: 4px;
+    background-color:lightskyblue;
+    color: white;
+    border: 1px solid black;
 }
 #c_widget button:hover, #c_widget input[type=submit]:hover {
-    color: white;
-    border: 1px solid #B766FF;
+    color: black;
+    border: 1px solid white;
 }
 #c_widget button:disabled, #c_widget input[type=submit]:disabled {opacity: 60%;}
 #c_widget button:disabled:hover, #c_widget input[type=submit]:disabled:hover {
-    color: #B766FF;
-    border: 1px solid white;
+    color: white;
+    border: 1px solid lightskyblue;
 }
 
 /* Input section */
 #c_inputDiv {
     margin-bottom: 15px;
-    padding: 10px;
-    background-color: black;
-    border: 2px solid white;
+    /* padding: 20px; */
+    background-color:white;
+    border: 2px solid lightskyblue;
 }
 
 #c_widgetTitle {
-    margin: -10px;
-    margin-bottom: 10px;
-    padding: 5px;
+    margin: 0;
+    padding: 5px 20px 5px 5px;
     text-transform: uppercase;
-    font-style: italic;
-    font-weight: bold;
     text-align: right;
-    background-color: #2D0B52;
+    /* background-color: lightskyblue; */
+    border-bottom: 2px solid lightskyblue;
 }
 
 .c-inputWrapper {
     display: block;
     text-align: right;
+    margin: 10px 20px 10px 20px;
 }
 .c-input {
     padding: 4px;
     color: black;
-    border: 1px solid #2D0B52;
+    border: 1px solid lightskyblue;
 	outline: none;
 }
-.c-input:focus {border: 1px solid #B766FF;}
+.c-input:focus {border: 1px solid skyblue;}
 
 .c-textInput {
     width: calc(100% - 10px);
@@ -128,8 +146,7 @@
 }
 #c_submitButton {
     display: block; 
-    margin-left: auto; 
-    margin-right: 0;
+    margin: 10px 20px 10px auto;
 }
 #c_replyingText {
     color: white;
@@ -138,10 +155,11 @@
 
 /* Comment section */
 .c-comment {
+    font-family: 'MS Gothic';
     margin-bottom: 15px;
     padding: 10px;
-    border: 2px solid white;
-    background-color: #2D0B52; 
+    border: 2px solid lightskyblue;
+    background-color: white;
 }
 .c-reply {
     display: block;
@@ -150,15 +168,15 @@
     margin-left: auto;
     margin-right: 0;
     padding: 10px;
-    border: 2px solid white;
-    background-color: #2D0B52; 
+    border: 2px solid lightskyblue;
+    background-color: white; 
 }
 .c-reply:last-child {margin-bottom: 0;}
 .c-replyContainer {
     margin: -10px;
     margin-top: 10px;
     padding: 10px;
-    background-color: black;
+    background-color:lightskyblue;
 }
 
 .c-name {
@@ -172,7 +190,7 @@
 .c-site {
     text-transform: uppercase;
     text-decoration: none;
-    color: #B766FF;
+    color: white;
 }
 .c-site:hover {color: white;}
 .c-timestamp {
@@ -184,11 +202,11 @@
     margin-left: -10px;
     margin-right: -10px;
     padding: 10px;
-    font-family: Verdana;
-    font-size: 14px;
+    font-family: 'MS Gothic';
+    font-size: 16px;
     text-align: justify;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
 }
 
 /* Pagination */
