@@ -72,8 +72,14 @@ jobs:
           # Delete orphaned files on neocities that don't exist in distDir
           cleanup: true
 
+      - name: checkout test Nekoweb
+        uses: actions/checkout@v3
+        with:
+          repository: Berbardo/nekoweb-deploy 
+          path: nekoweb-deploy
+
       - name: Deploy to Nekoweb
-        uses: mp-pinheiro/nekoweb-deploy@main
+        uses: ./nekoweb-deploy
         with:
           API_KEY: ${{ secrets.NEKOWEB_API_KEY }}
           BUILD_DIR: './_site'
