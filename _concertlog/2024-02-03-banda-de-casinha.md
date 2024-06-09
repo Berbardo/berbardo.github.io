@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Banda de Casinha - Casa Algo Hits (SP)"
+title:  "Banda de Casinha: 2ª edição - Casa Algo Hits (SP)"
 day: "2024-02-03"
 link: "https://www.youtube.com/embed/IwS8BKWy9kc?si=u5PROdlffBL38eX7"
 text: "banda de casinha!!! 

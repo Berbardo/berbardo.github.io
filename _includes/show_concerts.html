@@ -16,19 +16,19 @@
             <source src={{post.video}} type="video/mp4">
         </video>
         {% endif %}
+    </div>
+    <div class="post concert">
         {% if post.video-vertical %}
-        <video class="concert-vertical" src={{post.video-vertical}} controls
-            {% if loopindex == 0 %}
-            style="float: right;"
-            {% else %}
-            style="float: left;"
-            {% endif %}
-            >
+        <video class="concert-vertical" src={{post.video-vertical}} controls>
             <source src={{post.video}} type="video/mp4">
         </video>
         {% endif %}
-    </div>
-    <div class="post concert">
+        {% if post.link-vertical %}
+        <iframe loading="lazy" class="concert-vertical"
+            src={{post.link-vertical}} frameborder="0" allowfullscreen
+            allow="accelerometer clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        > </iframe>
+        {% endif %}
         {% if loopindex == 1 %}
         <div style="text-align: right">
         {% else %}
