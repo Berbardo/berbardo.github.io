@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+	<html class="links">
+        <head>
+            <!-- favicon -->
+            <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+
+            <title>{{ page.title }}</title>
+            <!-- link to main stylesheet -->
+            <link rel="stylesheet" href="https://unpkg.com/98.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo%20One">
+            <link rel="stylesheet" type="text/css" href="/css/main.css">
+            <link rel="stylesheet" type="text/css" href="/css/links.css">
+            <link rel="stylesheet" type="text/css" href="/css/tweets.css">
+            <link rel="stylesheet" type="text/css" href="/css/hypnospace.css">
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+            <meta charset="utf-8" />
+        </head>
+        {% include bubbles.html %}
+        {% include nav.html %}
+        {% include hypno_bg.html %}
+        <div class="body">
+
+            <h1 id="links">{{ page.title }}</h1>
+
+            <div class="postbox">
+                <div class="post post-blog">
+                    <a class="post">
+                        <h4 class="post">tweets</h4>
+                        <p class="post">
+                            lista boba de tweets que eu gostaria de salvar para posteridade e para meu proprio ego
+                        </p>
+                        <img loading="lazy" src="img/links/tweets/numbers.jpg" style="margin-top: 10px; width:70%"/>
+                    </a>
+                </div>
+            </div>
+            
+            {{ content }}
+            
+            {% include footer.html %}
+        </div>
+	</html>

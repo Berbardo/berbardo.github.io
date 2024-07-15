@@ -1,0 +1,8 @@
+{% assign loopindex = forloop.index | modulo: 2 %}
+<div class="postbox">
+    <a class="post" href={{ post.link }}>
+        <img loading="lazy" class="tweet" src={{post.img}} />
+        <!-- <h4 class="post">{{ post.day }} - {{ post.title }}</h4> -->
+        <!-- <p class="post">{{ post.text }}</p> -->
+    </a>
+</div>
