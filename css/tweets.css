@@ -2,3 +2,10 @@ img.tweet {
     /* width: 30%; */
     margin-bottom: 3%;
 }
+
+@media screen and (max-width: 640px) {
+    img.tweet {
+        width: 80%;
+        margin-bottom: 3%;
+    }
+}
