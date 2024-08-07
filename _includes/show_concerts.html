@@ -1,5 +1,11 @@
 {% assign loopindex = forloop.index | modulo: 2 %}
 <div class="postbox">
+    {% assign next_index = site.concertlog.size | minus: forloop.index | minus:1 %}
+    {% if next_index >= 0 %}
+        {% assign next_post = site.concertlog[next_index] %}
+    {% else %}
+        {% assign next_post = post %}
+    {% endif %}
     {% if loopindex == 0 %}
     <div style="text-align: right">
     {% else %}
@@ -17,7 +23,11 @@
         </video>
         {% endif %}
     </div>
+    {% if (post.video-vertical or post.link-vertical) and (next_post.video-vertical or next_post.link-vertical) %}
+    <div class="post concert" style="margin-bottom: 200px;">
+    {% else %}
     <div class="post concert">
+    {% endif %}
         {% if post.video-vertical %}
         <video class="concert-vertical" src={{post.video-vertical}} controls>
             <source src={{post.video}} type="video/mp4">
