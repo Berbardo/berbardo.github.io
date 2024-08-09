@@ -21,7 +21,7 @@
 .drawing-container-scroll {
     display: flex;
     justify-content: space-around;
-    animation: scroll-horizontal 15s linear infinite;
+    animation: scroll-horizontal 20s linear infinite;
 }
 
 .drawings-img {
@@ -67,3 +67,11 @@
     }
   }
   
+@media screen and (max-width: 640px) {
+    #drawbook-frame {
+        height: 336px;
+        width: 300px;
+        margin: auto;
+        display: block;
+    }
+}
