@@ -69,7 +69,7 @@
   
 @media screen and (max-width: 640px) {
     #drawbook-frame {
-        height: 336px;
+        height: 370px;
         width: 300px;
         margin: auto;
         display: block;
