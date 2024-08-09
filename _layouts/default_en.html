@@ -8,6 +8,7 @@
             <!-- link to main stylesheet -->
             <link rel="stylesheet" type="text/css" href="/css/main.css">
             <link rel="stylesheet" type="text/css" href="/css/index_windows.css">
+            <link rel="stylesheet" type="text/css" href="/css/drawings.css">
             <link rel="stylesheet" href="https://unpkg.com/98.css">
             <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 
@@ -20,23 +21,25 @@
         {% include rainbow.html content="berbardo's webpage" %}
         {% include nav_en.html %}
         <div class="body">
-                <body>
-                    <div id="wrapper">
-                        <h1 class="title">Welcome to my website!</h1>
-                    
-                        <p class="texto">Make yourself at home :]</p>
-                    
-                        <img loading="lazy" id="welcome" src="/img/welcome.webp" alt="Minha Figura" class="center">
-                        
-                        {% include footer.html %}
-                    </div>
+            <body>
+                <div class="container">
+                
+                {{ content }}
+                
+                </div><!-- /.container -->
 
-                    <div class="container">
+                <div id="wrapper">
+                    <h1 class="title">Send me your drawings! :]</h1>
+                
+                    <iframe id="drawbook-frame" src="https://berbardo.straw.page/" frameborder="no" scrolling="no"></iframe>
                     
-                    {{ content }}
+                    <p class="texto">Other drawings below :p</p>
+
+                    {% include show_drawings.html %}
                     
-                    </div><!-- /.container -->
-                </body>
+                    {% include footer.html %}
+                </div>
+            </body>
         </div>
 
         <div class="glitchbox-index" id="pagebutton">

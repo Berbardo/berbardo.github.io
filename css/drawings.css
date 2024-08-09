@@ -1,0 +1,71 @@
+
+#drawbook-frame {
+    height: 560px;
+    width: 500px;
+    margin: auto;
+    display: block;
+}
+
+.drawing-container {
+    display: flex;
+    text-align: center;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.drawing-container-scroll {
+    position: relative;
+    white-space: nowrap;
+    left: 100%;
+    width: 100%;
+}
+
+.drawing-container-scroll {
+    display: flex;
+    justify-content: space-around;
+    animation: scroll-horizontal 15s linear infinite;
+}
+
+.drawings-img {
+    width: 376px;
+    height: 305px;
+    image-rendering: pixelated;
+    scale: 0.75;
+    /* border: 10px solid black; */
+}
+
+@keyframes scroll-horizontal {
+    0% {
+        left: 75%;
+        /* transform: translateX(-1%); */
+    }
+  
+    100% {
+        left: -38%;
+        /* transform: translateX(-50%); */
+    }
+}
+
+.drawing-container:hover > .drawing-container-scroll {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+/* For browsers that support `scrollbar-*` properties */
+@supports (scrollbar-color: auto) {
+    .drawing-container {
+      scrollbar-color: cornflowerblue rgb(0 ,0, 0, 0);
+    }
+  }
+  
+  /* Otherwise, use `::-webkit-scrollbar-*` pseudo-elements */
+  @supports selector(::-webkit-scrollbar) {
+    .drawing-container::-webkit-scrollbar {
+      background: cornflowerblue;
+    }
+    .drawing-container::-webkit-scrollbar-thumb {
+      background: rgb(0 ,0, 0, 0);
+    }
+  }
+  

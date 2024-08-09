@@ -8,6 +8,7 @@
             <!-- link to main stylesheet -->
             <link rel="stylesheet" type="text/css" href="/css/main.css">
             <link rel="stylesheet" type="text/css" href="/css/index_windows.css">
+            <link rel="stylesheet" type="text/css" href="/css/drawings.css">
             <link rel="stylesheet" href="https://unpkg.com/98.css">
             <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 
@@ -21,22 +22,23 @@
         {% include nav.html %}
         <div class="body">
             <body>
-                <div id="wrapper">
-        
-                    <h1 class="title">Boas vindas ao meu site!</h1>
+                <div class="container">
                 
-                    <p class="texto">Sinta-se a vontade para explorá-lo :]</p>
-                    
-                    <img loading="lazy" id="welcome" src="/img/welcome.webp" alt="Minha Figura" class="center">
+                {{ content }}
+                
+                </div><!-- /.container -->
 
+                <div id="wrapper">
+                    <h1 class="title">Me mande seus desenhos! :]</h1>
+                
+                    <iframe id="drawbook-frame" src="https://berbardo.straw.page/" frameborder="no" scrolling="no"></iframe>
+                    
+                    <p class="texto">Desenhos de outras pessoas abaixo :p</p>
+
+                    {% include show_drawings.html %}
+                    
                     {% include footer.html %}
                 </div>
-
-                    <div class="container">
-                    
-                    {{ content }}
-                    
-                    </div><!-- /.container -->
             </body>
         </div>
 
