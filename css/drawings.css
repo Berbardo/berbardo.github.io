@@ -16,8 +16,6 @@
 .drawing-container-scroll {
     position: relative;
     white-space: nowrap;
-    left: 100%;
-    width: 100%;
 }
 
 .drawing-container-scroll {
@@ -30,19 +28,19 @@
     width: 376px;
     height: 305px;
     image-rendering: pixelated;
-    scale: 0.75;
+    scale: 0.8;
     /* border: 10px solid black; */
 }
 
 @keyframes scroll-horizontal {
     0% {
-        left: 75%;
-        /* transform: translateX(-1%); */
+        /* left: 75%; */
+        transform: translateX(0%);
     }
   
     100% {
-        left: -38%;
-        /* transform: translateX(-50%); */
+        /* left: -50%; */
+        transform: translateX(-50%);
     }
 }
 

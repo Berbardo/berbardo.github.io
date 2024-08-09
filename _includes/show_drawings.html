@@ -1,10 +1,10 @@
 {% assign drawings = site.static_files | where: "drawings", true %}
 <div class="drawing-container">
     <div class="drawing-container-scroll">
-        {% for image in drawings %}
+        {% for image in drawings reversed %}
         <img loading="lazy" src="{{ site.baseurl }}{{ image.path }}" alt="image" class="drawings-img" />
         {% endfor %}
-        {% for image in drawings %}
+        {% for image in drawings reversed %}
         <img loading="lazy" src="{{ site.baseurl }}{{ image.path }}" alt="image" class="drawings-img" />
         {% endfor %}
     </div>
