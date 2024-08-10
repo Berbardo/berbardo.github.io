@@ -19,7 +19,9 @@
 }
 
 .drawing-container-scroll {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 1fr;
     justify-content: space-around;
     animation: scroll-horizontal 20s linear infinite;
 }
