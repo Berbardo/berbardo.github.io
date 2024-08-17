@@ -1,11 +1,11 @@
 {% assign drawings = site.static_files | where: "drawings", true %}
 <div class="drawing-container">
     <div class="drawing-container-scroll">
-        {% assign drawings_count = drawings.size %}
+        {% assign drawings_is_odd = drawings.size | modulo: 2 %}
         {% for image in drawings reversed %}
         <img loading="lazy" src="{{ site.baseurl }}{{ image.path }}" alt="image" class="drawings-img" />
         {% endfor %}
-        {% if drawings_count % 2 == 1 %}
+        {% if drawings_is_odd == 1 %}
         <img loading="lazy" src="" alt="image" class="drawings-img" style="opacity:0.0;filter:alpha(opacity=00);"/>
         {% endif %}
         {% for image in drawings reversed %}
