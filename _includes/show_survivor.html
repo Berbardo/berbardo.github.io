@@ -1,0 +1,16 @@
+{% assign loopindex = forloop.index | modulo: 2 %}
+<div class="postbox">
+    <div class="post">
+        {% if loopindex == 1 %}
+        <div style="text-align: right">
+        {% else %}
+        <div style="text-align: left">
+        {% endif %}
+            <img loading="lazy" class="post" src={{post.img}} />
+        </div>
+        <a class="post">
+            <h4 class="post">{{ post.ranking }} - {{ post.title }}</h4>
+            <p class="post">{{ post.text }}</p>
+        </a>
+    </div>
+</div>

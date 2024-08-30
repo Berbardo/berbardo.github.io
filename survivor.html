@@ -1,0 +1,13 @@
+---
+layout: linkstemp
+title: Survivor
+permalink: /survivor
+---
+
+<div class="blurb">
+
+    {% for post in site.survivorranking %}
+        {% include show_survivor.html %}
+    {% endfor %}
+</div><!-- /.blurb -->
+
