@@ -43,6 +43,13 @@ h4.post {
     color: black;
 }
 
+h5.post {
+    margin: 0 0 10px 0;
+    font-family: 'Chicago', sans-serif;
+    font-size: 0.7rem;
+    color: black;
+}
+
 p.post {
     margin: 0 0 0 0;
     font-family: 'Verdana', sans-serif;
