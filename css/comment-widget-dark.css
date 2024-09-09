@@ -190,9 +190,9 @@
 .c-site {
     text-transform: uppercase;
     text-decoration: none;
-    color: white;
+    color: black;
 }
-.c-site:hover {color: white;}
+.c-site:hover {color: skyblue;}
 .c-timestamp {
     float: right;
     opacity: 75%;
