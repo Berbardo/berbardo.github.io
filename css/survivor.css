@@ -1,0 +1,4 @@
+span:not(:hover) { 
+    color: black; 
+    background-color: black;
+}

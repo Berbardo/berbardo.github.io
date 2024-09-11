@@ -5,8 +5,8 @@ permalink: /survivor
 ---
 
 <div class="blurb">
-
-    {% for post in site.survivorranking %}
+    {% assign survivor = site.survivorranking | sort: "ranking" %}
+    {% for post in survivor %}
         {% include show_survivor.html %}
     {% endfor %}
 </div><!-- /.blurb -->
