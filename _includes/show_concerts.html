@@ -44,7 +44,9 @@
         {% else %}
         <div style="text-align: left">
         {% endif %}
+        {% if post.img %}
             <img loading="lazy" class="post" src={{post.img}} />
+        {% endif %}
         </div>
         <h4 class="post">{{ post.day }} - {{ post.title }}</h4>
         <p class="post">{{ post.text }}</p>
