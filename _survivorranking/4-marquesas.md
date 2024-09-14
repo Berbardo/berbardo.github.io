@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Survivor: Marquesas (Season 4)"
-ranking: 9
+ranking: 10
 text: "me diverti com essa temporada, tem alguns participantes ótimos com arcos bem elaborados <span class=\"spoiler\">mas que infelizmente saem cedo demais</span>.<br>
 <br>
 <span class=\"spoiler\">e que final 2 bosta, pelo menos as perguntas são divertidas</span>.<br>

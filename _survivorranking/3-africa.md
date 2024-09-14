@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Survivor: Africa (Season 3)"
-ranking: 13
+ranking: 14
 text: "dropei depois de 2 episódios porque sabia quem ganhava e queria assistir all-stars logo"
 day: "Dropei"
 img: "/img/survivor/africa.webp"

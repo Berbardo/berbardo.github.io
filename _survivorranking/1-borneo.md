@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Survivor: Borneo (Season 1)"
-ranking: 12
+ranking: 13
 text: "nao curti tanto a 1a temp, achava q ia gostar bem mais mas tiveram só uns 2 episódios que gostei bastante. as partes mais marcantes pra mim são o finale, e a trilha sonora eletrônica torando em toda competição de imunidade que foi minha parte favorita da temporada inteira.<br>
 <br>
 participantes favoritos: <span class=\"spoiler\">greg</span> e <span class=\"spoiler\">hatch</span>, meio óbvio"
