@@ -41,7 +41,6 @@ collections:
   blogentries:
   concertlog:
   survivorranking:
-    sort_by: ranking
   # gamelinks:
   # codelinks:
   # weblinks:

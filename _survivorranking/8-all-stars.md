@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Survivor: All-Stars (Season 8)"
-ranking: 5
 text: "serntimentos conflitantes a respeito dessa temporada.<br>
 <br>
 eu entendo os motivos pelos quais essa temporada decepciona muita gente. ela definitivamente tem o pior episódio de survivor que eu assisti até agora, que deixa um amargor difícil de tirar assistindo o resto dos episódios.<br>
