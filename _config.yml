@@ -54,7 +54,6 @@ defaults:
       path: "img/foda"
     values:
       foda: true
-      album: true
   - scope:
       path: "img/drawings"
     values:
