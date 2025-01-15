@@ -41,15 +41,16 @@ collections:
   blogentries:
   concertlog:
   survivorranking:
+  albums2024:
   # gamelinks:
   # codelinks:
   # weblinks:
 
 defaults:
   - scope:
-      path: "img/albums"
+      path: "img/albums_2023"
     values:
-      album: true
+      album_2023: true
   - scope:
       path: "img/foda"
     values:

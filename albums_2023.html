@@ -1,7 +1,7 @@
 ---
 layout: gallery
 title: Meus Álbums de 2023
-permalink: /albums
+permalink: /albums_2023
 ---
 
 <div class="blurb">
@@ -24,7 +24,7 @@ permalink: /albums
 
     <div class="art-row">
         <div class="art-column">
-            {% assign album_images = site.static_files | where: "album", true %}
+            {% assign album_images = site.static_files | where: "album_2023", true %}
             {% for image in album_images %}{% assign loopindex = forloop.index | modulo: 3 %}{% if loopindex == 0 %}
             <img loading="lazy" src="{{ site.baseurl }}{{ image.path }}" alt="image" class="noise" />
             {% endif %}{% endfor %}
