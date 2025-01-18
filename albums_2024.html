@@ -105,6 +105,7 @@ order:
                         {% else %}
                         style="right: 0;/** background-color: {{ post.color }};**/"
                         {% endif %}
+                        preload="metadata"
                         controls
                     >
                         <source src="{{ post.audio }}" type="audio/ogg">
@@ -118,7 +119,7 @@ order:
     <script>
         let audios = document.getElementsByClassName('album-audio');
         for (let index = 0; index < audios.length; index++) {
-            audios[index].volume = 0.05;
+            audios[index].volume = 0.09;
         }
         
     </script>
