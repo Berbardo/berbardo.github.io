@@ -17,14 +17,19 @@
     box-shadow: inset 0 1px 12px orangered; */
 }
 
+.album-titles {
+    width: 46%;
+    height: 100%;
+    position: absolute;
+    overflow: scroll;
+    scrollbar-width: none;
+}
 
 .album-img {
     /* margin: 50px; */
     float: left;
-    max-height: 100%;
-    max-width: 50%;
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 50%;
     margin: auto;
 }
 
@@ -34,14 +39,7 @@
     width: 50%;
 }
 
-.album-img-text {
-    text-align: center;
-    color: white;
-    font-family: 'Chicago', sans-serif;
-}
-
 .album-genres {
-    text-align: justify;
     font-weight: bold;
     color: whitesmoke;
     font-family: 'PixelOperatorMonoRegular', sans-serif !important;
@@ -50,7 +48,7 @@
 }
 
 .album-text {
-    text-align: justify;
+    /* text-align: justify; */
     color: whitesmoke;
     font-family: 'PixelOperatorMonoRegular', sans-serif !important;
     font-size: 14px;
@@ -69,7 +67,6 @@
 }
 
 .album-h2 {
-    text-align: left;
     color: white;
     font-family: 'Chicago', sans-serif;
     margin-top: 20px;
@@ -80,6 +77,42 @@
     color: white;
     font-family: 'Chicago', sans-serif;
     font-size: 18px;
+}
+
+.album-item:nth-child(odd) .album-img {
+    float: left;
+}
+
+.album-item:nth-child(even) .album-img {
+    float: right;
+}
+
+.album-item:nth-child(odd) .album-audio {
+    left: 0;
+}
+
+.album-item:nth-child(even) .album-audio {
+    right: 0;
+}
+
+.album-item:nth-child(odd) .album-titles {
+    left: 54%;
+    text-align: left;
+    transform-origin: left;
+}
+
+.album-item:nth-child(even) .album-titles {
+    right: 54%;
+    text-align: right;
+    transform-origin: right;
+}
+
+.album-item:nth-child(odd) .album-text {
+    margin-right: 4%;
+}
+
+.album-item:nth-child(even) .album-text {
+    margin-left: 4%;
 }
 
 .album-item:hover > .album-titles {
@@ -110,3 +143,19 @@
         filter: brightness(150%);
     }
   }
+
+@media screen and (max-width: 640px) {
+    .album-item {
+        backdrop-filter: blur(1px);
+        background-color: 0;
+        flex-grow: 1;
+        flex-basis: 100%;
+        flex: 1 0 90%;
+        height: 50%;
+        max-width: 100%;
+        margin: 0;
+        margin-top: 20px;
+        /* border: 2px solid orange;
+        box-shadow: inset 0 1px 12px orangered; */
+    }
+}

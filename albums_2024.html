@@ -58,53 +58,27 @@ order:
                         src="{{ post.img }}"
                         alt="image"
                         class="album-img"
-                        {% if loopindex == 1 or loopindex == 3 %}
-                        style="box-shadow: 0 0 22px {{ post.color }}; float: left"
-                        {% else %}
-                        style="box-shadow: 0 0 22px {{ post.color }}; float: right"
-                        {% endif %}
+                        style="box-shadow: 0 0 22px {{ post.color }};"
                     />
                     <div class="album-titles">
                         <h2
                             class="album-h2"
-                            {% if loopindex == 1 or loopindex == 3 %}
-                            style="color: {{ post.textcolor }};  text-shadow: 0 1px 12px {{ post.textcolor }}; margin-left: 54%; text-align: left;"
-                            {% else %}
-                            style="color: {{ post.textcolor }};  text-shadow: 0 1px 12px {{ post.textcolor }}; margin-right: 54%; text-align: right;"
-                            {% endif %}
+                            style="color: {{ post.textcolor }};  text-shadow: 0 1px 12px {{ post.textcolor }};"
                         >{{ post.title }} ({{ post.year }})</h2>
                         <h3
                             class="album-h3"
-                            {% if loopindex == 1 or loopindex == 3 %}
-                            style="color: {{ post.textcolor }};  text-shadow: 0 1px 12px {{ post.textcolor }}; margin-left: 54%; text-align: left;"
-                            {% else %}
-                            style="color: {{ post.textcolor }};  text-shadow: 0 1px 12px {{ post.textcolor }}; margin-right: 54%; text-align: right;"
-                            {% endif %}
+                            style="color: {{ post.textcolor }};  text-shadow: 0 1px 12px {{ post.textcolor }};"
                         >{{ post.artist }}</h3>
                         <p
                             class="album-genres"
-                            {% if loopindex == 1 or loopindex == 3 %}
-                            style="margin-left: 54%; text-align: left;"
-                            {% else %}
-                            style="margin-right: 54%; text-align: right;"
-                            {% endif %}
                         >{{ post.genres }}</p>
                         <p
                             class="album-text"
-                            {% if loopindex == 1 or loopindex == 3 %}
-                            style="margin-left: 54%; margin-right: 4%; text-align: left;"
-                            {% else %}
-                            style="margin-right: 54%; margin-left: 4%; text-align: right;"
-                            {% endif %}
                         >{{ post.text }}</p>
                     </div>
                     <audio
                         class="album-audio"
-                        {% if loopindex == 1 or loopindex == 3 %}
-                        style="left: 0;/** background-color: {{ post.color }};**/"
-                        {% else %}
-                        style="right: 0;/** background-color: {{ post.color }};**/"
-                        {% endif %}
+                        style="/** background-color: {{ post.color }};**/"
                         preload="metadata"
                         controls
                     >
