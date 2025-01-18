@@ -7,7 +7,6 @@ artist: "Magdalena Bay"
 year: "2024"
 genres: "synthpop / dance pop"
 text: "
-
 <br>
 <br>
 <br>música favorita: Cry For Me

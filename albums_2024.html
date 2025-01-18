@@ -2,6 +2,30 @@
 layout: gallery
 title: Meus Álbums de 2024
 permalink: /albums_2024
+order:
+    - census-designated
+    - imaginal
+    - brat
+    - heaven-knows
+    - wallsocket
+    - purple-mountains
+    - quebec
+    - diamond-jubilee
+    - scrapyard
+    - siames
+    - acelero
+    - girl-with-fish
+    - where-weve-been
+    - club-shy
+    - tres
+    - long-season
+    - i-saw-the-tv-glow
+    - dots-and-loops
+    - stop-making-sense
+    - essentials
+    - garden-box
+    - plantasia
+    - lauryn-hill
 ---
 
 <div class="blurb">
@@ -24,69 +48,80 @@ permalink: /albums_2024
     
     <div class="album-div">
         {% assign albums2024 = site.albums2024 %}
-        {% for post in albums2024 %}
-            {% assign season_rank = forloop.index %}
+        {% for album in page.order %}
             {% assign loopindex = forloop.index | modulo: 4 %}
-            <div class="album-item">
-                <img
-                    loading="lazy"
-                    src="{{ post.img }}"
-                    alt="image"
-                    class="album-img"
-                    {% if loopindex == 1 or loopindex == 3 %}
-                    style="box-shadow: 0 0 22px {{ post.color }}; float: left"
-                    {% else %}
-                    style="box-shadow: 0 0 22px {{ post.color }}; float: right"
-                    {% endif %}
-                />
-                <div class="album-titles">
-                    <h2
-                        class="album-h2"
+            {% for post in albums2024 %}
+                {% if album == post.slug %}
+                <div class="album-item">
+                    <img
+                        loading="lazy"
+                        src="{{ post.img }}"
+                        alt="image"
+                        class="album-img"
                         {% if loopindex == 1 or loopindex == 3 %}
-                        style="color: {{ post.textcolor }};  text-shadow: 0 1px 12px {{ post.textcolor }}; margin-left: 54%; text-align: left;"
+                        style="box-shadow: 0 0 22px {{ post.color }}; float: left"
                         {% else %}
-                        style="color: {{ post.textcolor }};  text-shadow: 0 1px 12px {{ post.textcolor }}; margin-right: 54%; text-align: right;"
+                        style="box-shadow: 0 0 22px {{ post.color }}; float: right"
                         {% endif %}
-                    >{{ post.title }} ({{ post.year }})</h2>
-                    <h3
-                        class="album-h3"
+                    />
+                    <div class="album-titles">
+                        <h2
+                            class="album-h2"
+                            {% if loopindex == 1 or loopindex == 3 %}
+                            style="color: {{ post.textcolor }};  text-shadow: 0 1px 12px {{ post.textcolor }}; margin-left: 54%; text-align: left;"
+                            {% else %}
+                            style="color: {{ post.textcolor }};  text-shadow: 0 1px 12px {{ post.textcolor }}; margin-right: 54%; text-align: right;"
+                            {% endif %}
+                        >{{ post.title }} ({{ post.year }})</h2>
+                        <h3
+                            class="album-h3"
+                            {% if loopindex == 1 or loopindex == 3 %}
+                            style="color: {{ post.textcolor }};  text-shadow: 0 1px 12px {{ post.textcolor }}; margin-left: 54%; text-align: left;"
+                            {% else %}
+                            style="color: {{ post.textcolor }};  text-shadow: 0 1px 12px {{ post.textcolor }}; margin-right: 54%; text-align: right;"
+                            {% endif %}
+                        >{{ post.artist }}</h3>
+                        <p
+                            class="album-genres"
+                            {% if loopindex == 1 or loopindex == 3 %}
+                            style="margin-left: 54%; text-align: left;"
+                            {% else %}
+                            style="margin-right: 54%; text-align: right;"
+                            {% endif %}
+                        >{{ post.genres }}</p>
+                        <p
+                            class="album-text"
+                            {% if loopindex == 1 or loopindex == 3 %}
+                            style="margin-left: 54%; margin-right: 4%; text-align: left;"
+                            {% else %}
+                            style="margin-right: 54%; margin-left: 4%; text-align: right;"
+                            {% endif %}
+                        >{{ post.text }}</p>
+                    </div>
+                    <audio
+                        class="album-audio"
                         {% if loopindex == 1 or loopindex == 3 %}
-                        style="color: {{ post.textcolor }};  text-shadow: 0 1px 12px {{ post.textcolor }}; margin-left: 54%; text-align: left;"
+                        style="left: 0;/** background-color: {{ post.color }};**/"
                         {% else %}
-                        style="color: {{ post.textcolor }};  text-shadow: 0 1px 12px {{ post.textcolor }}; margin-right: 54%; text-align: right;"
+                        style="right: 0;/** background-color: {{ post.color }};**/"
                         {% endif %}
-                    >{{ post.artist }}</h3>
-                    <p
-                        class="album-genres"
-                        {% if loopindex == 1 or loopindex == 3 %}
-                        style="margin-left: 54%; text-align: left;"
-                        {% else %}
-                        style="margin-right: 54%; text-align: right;"
-                        {% endif %}
-                    >{{ post.genres }}</p>
-                    <p
-                        class="album-text"
-                        {% if loopindex == 1 or loopindex == 3 %}
-                        style="margin-left: 54%; margin-right: 4%; text-align: left;"
-                        {% else %}
-                        style="margin-right: 54%; margin-left: 4%; text-align: right;"
-                        {% endif %}
-                    >{{ post.text }}</p>
+                        controls
+                    >
+                        <source src="{{ post.audio }}" type="audio/ogg">
+                    </audio>
                 </div>
-                <audio
-                    class="album-audio"
-                    {% if loopindex == 1 or loopindex == 3 %}
-                    style="left: 0;/** background-color: {{ post.color }};**/"
-                    {% else %}
-                    style="right: 0;/** background-color: {{ post.color }};**/"
-                    {% endif %}
-                    controls
-                >
-                    <source src="{{ post.audio }}" type="audio/ogg">
-                </audio>
-            </div>
+                {% endif %}
+            {% endfor %}
         {% endfor %}
     </div>
+
+    <script>
+        let audios = document.getElementsByClassName('album-audio');
+        for (let index = 0; index < audios.length; index++) {
+            audios[index].volume = 0.05;
+        }
+        
+    </script>
 
 </div><!-- /.blurb -->
 

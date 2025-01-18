@@ -82,8 +82,12 @@
     font-size: 18px;
 }
 
-.album-titles:hover {
+.album-item:hover > .album-titles {
     animation: pulse 2s infinite;
+}
+
+.album-item:hover > .album-img {
+    animation: lighten 2s infinite;
 }
 
 @keyframes pulse {
@@ -94,5 +98,15 @@
     50% {
       transform: scale(1.33);
     }
+}
+
+
+@keyframes lighten {
+    0%,
+    100% {
+      animation-timing-function: ease-in;
+    }
+    50% {
+        filter: brightness(150%);
+    }
   }
-  
