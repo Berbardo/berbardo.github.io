@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Três"
-color: "SlateGray"
-textcolor: "LightSlateGray"
+color: "PeachPuff"
+textcolor: "PeachPuff"
 artist: "Hoovaranas"
 year: "2024"
 genres: "math rock"

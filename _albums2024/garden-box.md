@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "garden box 1.2"
-color: "SlateGray"
-textcolor: "LightSlateGray"
+color: "DarkSeaGreen"
+textcolor: "DarkSeaGreen"
 artist: "ICQ Baby"
 year: "2024"
 genres: "jersey club / techno"

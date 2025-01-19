@@ -5,24 +5,26 @@ permalink: /albums_2024
 order:
     - census-designated
     - imaginal
+    - wallsocket
     - brat
     - heaven-knows
-    - wallsocket
     - purple-mountains
+    - siames
+    - essentials
     - quebec
     - diamond-jubilee
     - scrapyard
-    - siames
     - acelero
-    - girl-with-fish
     - where-weve-been
     - club-shy
+    - girl-with-fish
     - tres
     - long-season
+    - twin-fantasy
     - i-saw-the-tv-glow
     - dots-and-loops
     - stop-making-sense
-    - essentials
+    - se-sonhos-pudessem-ser-guardados
     - garden-box
     - plantasia
     - lauryn-hill
@@ -78,7 +80,7 @@ order:
                     </div>
                     <audio
                         class="album-audio"
-                        style="/** background-color: {{ post.color }};**/"
+                        style="background-color: {{ post.color }}; color: {{ post.color }};"
                         preload="none"
                         controls
                     >
@@ -93,7 +95,7 @@ order:
     <script>
         let audios = document.getElementsByClassName('album-audio');
         for (let index = 0; index < audios.length; index++) {
-            audios[index].volume = 0.09;
+            audios[index].volume = 0.15;
         }
         
     </script>

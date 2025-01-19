@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "I Saw The TV Glow"
-color: "SlateGray"
-textcolor: "LightSlateGray"
+color: "DeepPink"
+textcolor: "DeepPink"
 artist: "Various Artists"
 year: "2024"
 genres: "soundtrack"

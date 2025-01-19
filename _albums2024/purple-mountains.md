@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Purple Mountains"
-color: "SlateGray"
-textcolor: "LightSlateGray"
+color: "MediumPurple"
+textcolor: "MediumPurple"
 artist: "Purple Mountains"
 year: "2019"
 genres: "indie rock"
 text: "
-esse acho esse álbum do David Berman tão mas tão sensível.
+eu acho esse álbum do David Berman tão mas tão sensível.
 <br>cada música toca em algum ponto de insegurança com tanta humanidade que acho difícil ouvir Purple Mountains casualmente sem me emocionar.
 <br>
 <br>música favorita: Maybe I'm the Only One For Me
