@@ -2,7 +2,7 @@
 layout: post
 title:  "Acelero"
 color: "SlateGray"
-textcolor: "LightSlateGray"
+textcolor: "#D2D1AD"
 artist: "Crizin da Z.O."
 year: "2024"
 genres: "funk / hip hop"

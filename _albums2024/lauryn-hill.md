@@ -2,7 +2,7 @@
 layout: post
 title:  "The Miseducation of Lauryn Hill"
 color: "Chocolate"
-textcolor: "SaddleBrown"
+textcolor: "#B96E3B"
 artist: "Lauryn Hill"
 year: "1998"
 genres: "R&B / hip hop"

@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Purple Mountains"
-color: "MediumPurple"
-textcolor: "MediumPurple"
+color: "#8b5299"
+textcolor: "#8b5299"
 artist: "Purple Mountains"
 year: "2019"
 genres: "indie rock"

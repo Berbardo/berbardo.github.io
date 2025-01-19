@@ -2,7 +2,7 @@
 layout: post
 title:  "Quebec"
 color: "Crimson"
-textcolor: "Crimson"
+textcolor: "#ea604b"
 artist: "Ween"
 year: "2003"
 genres: "art rock"

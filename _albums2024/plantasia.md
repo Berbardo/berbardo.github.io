@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Plantasia"
-color: "SeaGreen"
-textcolor: "SeaGreen"
+color: "#68aa53"
+textcolor: "#68aa53"
 artist: "Mort Garson"
 year: "1976"
 genres: "ambient / electronic"

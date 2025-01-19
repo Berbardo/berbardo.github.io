@@ -2,7 +2,7 @@
 layout: post
 title:  "Diamond Jubilee"
 color: "Khaki"
-textcolor: "Khaki"
+textcolor: "#D5CD6D"
 artist: "Cindy Lee"
 year: "2024"
 genres: "hypnagogic pop"

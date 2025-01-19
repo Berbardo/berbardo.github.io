@@ -2,7 +2,7 @@
 layout: post
 title:  "Census Designated"
 color: "lightblue"
-textcolor: "LightCyan"
+textcolor: "#B2A799"
 artist: "Jane Remover"
 year: "2023"
 genres: "shoegaze / noise rock"

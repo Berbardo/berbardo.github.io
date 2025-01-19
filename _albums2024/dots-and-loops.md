@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Dots and Loops"
-color: "GreenYellow"
-textcolor: "GreenYellow"
+color: "#c5d32e"
+textcolor: "#c5d32e"
 artist: "Stereolab"
 year: "1997"
 genres: "art pop"
