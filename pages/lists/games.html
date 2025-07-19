@@ -1,0 +1,13 @@
+---
+layout: linkstemp
+title: Jogos
+permalink: /games
+published: false
+---
+
+<div class="blurb">
+    {% for post in site.gamelinks reversed %}
+        {% include show_posts.html %}
+    {% endfor %}
+</div><!-- /.blurb -->
+

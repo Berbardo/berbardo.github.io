@@ -1,0 +1,12 @@
+---
+layout: linkstemp
+title: Vídeos
+permalink: /video
+---
+
+<div class="blurb">
+
+    {% for post in site.videolinks reversed %}
+        {% include show_posts.html %}
+    {% endfor %}</div><!-- /.blurb -->
+

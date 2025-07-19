@@ -1,0 +1,162 @@
+/* Font */
+
+@font-face {
+    font-family: Chicago;
+    src: url("./font/chicago.ttf") format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: PixelOperatorMonoRegular;
+    src: url("./font/pixel-operator-mono.ttf") format('truetype');
+    font-style: normal;
+}
+
+.blurb li
+/* , h2 */
+{
+    font-family: 'Chicago', sans-serif;
+}
+/* Site */
+
+html {
+    /* height: 100%; */
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    width: 100%;
+}
+
+.whirled {
+  /* The image used */
+    background-image: url("../img/hubs/whirled_lobby.gif");
+    bottom: 0;
+
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body {
+    margin: 0 auto auto;
+    width: 70%;
+}
+
+.outline {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    border: 4px ridge;
+    pointer-events: none;
+}
+
+.lista {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: #333;
+}
+
+
+.glitchbox li.lista {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: #333;
+}
+
+#wrapper {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 20px 7% 20px 7%;
+    background: #fff8dc;
+    box-shadow: 0 0 0 5px MidnightBlue inset;
+    box-shadow: 4px 4px 0 #0000ff, 8px 8px 0 #00ffff, 12px 12px 0 #ff00ff;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    /* height: 10%; */
+    width: 20%;
+}
+
+.title {
+    font-size: 2em;
+    font-family: 'Chicago', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto {
+    font-size: 1.5em;
+    font-family: 'Chicago', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.textinho {
+    font-size: 1em;
+    font-family: 'Chicago', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+}
+
+h1.page-column-title {
+    mix-blend-mode: difference;
+
+    text-transform: lowercase;
+
+    font-family: 'Chicago', sans-serif;
+    color: rgb(255, 255, 255);
+
+    font-size: 2.8vw;
+    margin: 0 auto;
+    margin-top: 25px;
+    text-align: center;
+    
+    scroll-behavior: smooth;
+    user-select: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.page-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-top: 25px;
+}
+
+/* Create four equal columns that sits next to each other */
+.page-column {
+    flex: 50%;
+    max-width: 50%;
+    /* padding: 0 4px; */
+}
+
+.page-column img {
+    margin-top: 8px;
+    margin: 8px 4px 4px 4px;
+    vertical-align: middle;
+    width: 96%;
+}
+
+.hub-video {
+    width: 100%;
+    height: 100%;
+}

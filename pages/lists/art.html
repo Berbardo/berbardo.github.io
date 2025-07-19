@@ -1,0 +1,52 @@
+---
+layout: gallery
+title: Arte - Ideias
+permalink: /art
+published: false
+---
+
+<div class="blurb">
+
+    <h1 class="side-text">
+        <span>i</span>
+        <span>d</span>
+        <span>e</span>
+        <span>i</span>
+        <span>a</span>
+        <span>s</span>
+    </h1>
+
+    <h1 class="side-text">
+        <span>i</span>
+        <span>d</span>
+        <span>e</span>
+        <span>i</span>
+        <span>a</span>
+        <span>s</span>
+    </h1>
+
+    <div class="art-row">
+        <div class="art-column">
+            {% for image in site.static_files %}
+                {% if image.path contains 'art/col1' %}
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="art-column">
+            {% for image in site.static_files %}
+                {% if image.path contains 'art/col2' %}
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="art-column">
+            {% for image in site.static_files %}
+                {% if image.path contains 'art/col3' %}
+                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div><!-- /.blurb -->
+

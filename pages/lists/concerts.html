@@ -1,0 +1,13 @@
+---
+layout: linkstemp
+title: Concert Log
+permalink: /concerts
+---
+
+<div class="blurb">
+
+    {% for post in site.concertlog reversed %}
+        {% include show_concerts.html %}
+    {% endfor %}
+</div><!-- /.blurb -->
+

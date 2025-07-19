@@ -1,0 +1,104 @@
+---
+layout: gallery
+title: Meus Álbums de 2024
+permalink: /albums_2024
+order:
+    - census-designated
+    - imaginal
+    - wallsocket
+    - brat
+    - heaven-knows
+    - purple-mountains
+    - siames
+    - essentials
+    - quebec
+    - diamond-jubilee
+    - scrapyard
+    - acelero
+    - ep01
+    - where-weve-been
+    - club-shy
+    - girl-with-fish
+    - tres
+    - long-season
+    - twin-fantasy
+    - i-saw-the-tv-glow
+    - dots-and-loops
+    - stop-making-sense
+    - se-sonhos-pudessem-ser-guardados
+    - garden-box
+    - plantasia
+    - lauryn-hill
+---
+
+<div class="blurb">
+
+    <h1 class="side-text">
+        <span>2</span>
+        <span>0</span>
+        <span>2</span>
+        <span>4</span>
+    </h1>
+
+    <h1 class="art-column-title">álbuns de 2024</h1>
+
+    <h1 class="side-text">
+        <span>2</span>
+        <span>0</span>
+        <span>2</span>
+        <span>4</span>
+    </h1>
+    
+    <div class="album-div">
+        {% assign albums2024 = site.albums2024 %}
+        {% for album in page.order %}
+            {% assign loopindex = forloop.index | modulo: 4 %}
+            {% for post in albums2024 %}
+                {% if album == post.slug %}
+                <div class="album-item">
+                    <img
+                        loading="lazy"
+                        src="{{ post.img }}"
+                        alt="image"
+                        class="album-img"
+                        style="box-shadow: 0 0 22px {{ post.color }};"
+                    />
+                    <div class="album-titles">
+                        <h2
+                            class="album-h2"
+                            style="color: {{ post.textcolor }};  text-shadow: 0 1px 12px {{ post.textcolor }};"
+                        >{{ post.title }} ({{ post.year }})</h2>
+                        <h3
+                            class="album-h3"
+                            style="color: {{ post.textcolor }};  text-shadow: 0 1px 12px {{ post.textcolor }};"
+                        >{{ post.artist }}</h3>
+                        <p
+                            class="album-genres"
+                        >{{ post.genres }}</p>
+                        <p
+                            class="album-text"
+                        >{{ post.text }}</p>
+                    </div>
+                    <audio
+                        class="album-audio"
+                        preload="none"
+                        controls
+                    >
+                        <source src="{{ post.audio }}" type="audio/ogg">
+                    </audio>
+                </div>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+
+    <script>
+        let audios = document.getElementsByClassName('album-audio');
+        for (let index = 0; index < audios.length; index++) {
+            audios[index].volume = 0.15;
+        }
+        
+    </script>
+
+</div><!-- /.blurb -->
+
