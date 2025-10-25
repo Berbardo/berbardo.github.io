@@ -1,0 +1,61 @@
+.media-div {
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.media-titles {
+    height: 100%;
+    margin: auto;
+    text-align: justify;
+    overflow: auto;
+}
+
+.media-audio {
+    position: absolute;
+    bottom: 0%;
+    width: 50%;
+}
+
+.media-genres {
+    font-weight: bold;
+    color: whitesmoke;
+    font-family: 'PixelOperatorMonoRegular', sans-serif !important;
+    font-size: 18px;
+}
+
+.media-text {
+    margin: auto;
+    width: 66%;
+    color: whitesmoke;
+    font-family: 'PixelOperatorMonoRegular', sans-serif !important;
+    font-size: 18px;
+}
+
+.media-div a {
+    color: #FFD700;
+}
+
+.media-div img {
+    margin: auto;
+    display: block;
+}
+
+.media-h2 {
+    color: white;
+    font-family: 'Chicago', sans-serif;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 27px;
+}
+
+.media-h3 {
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-family: 'Chicago', sans-serif;
+    font-size: 26px;
+}
