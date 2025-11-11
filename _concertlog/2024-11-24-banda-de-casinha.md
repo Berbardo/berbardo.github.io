@@ -6,5 +6,5 @@ link-vertical: "https://www.youtube.com/embed/V0UZsktfRKs"
 link: "https://youtube.com/embed/PzUYaK06cgo"
 text: "vi lipo + pedroacost, jonabug, capote, mitocôndria, morro fuji, e chococorn and the sugarcanes
 <br><br>fui com nelson e sol e encontramos matheus !"
-img: "/img/concert/cigarro.jpg"
+img: "/img/concert/cigarro.webp"
 ---
