@@ -51,7 +51,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7.3 # Not needed with a .ruby-version file
+          ruby-version: 4.0.6 # Not needed with a .ruby-version file
           bundler-cache: true
             
       - name: "Build Site"
