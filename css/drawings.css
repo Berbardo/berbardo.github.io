@@ -1,9 +1,25 @@
-
-#drawbook-frame {
-    height: 560px;
-    width: 500px;
-    margin: auto;
+.drawbook-link {
     display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 0.75rem 1rem;
+    border: 2px outset #fff;
+    background: #c0c0c0;
+    color: #000;
+    font-family: 'Chicago', sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+.drawbook-link:hover,
+.drawbook-link:active {
+    border-style: inset;
+}
+
+.drawbook-link:focus-visible {
+    outline: 2px solid cornflowerblue;
+    outline-offset: 3px;
 }
 
 .drawing-container {
@@ -71,10 +87,7 @@
   }
   
 @media screen and (max-width: 640px) {
-    #drawbook-frame {
-        height: 370px;
-        width: 300px;
-        margin: auto;
-        display: block;
+    .drawbook-link {
+        padding: 0.65rem;
     }
 }
