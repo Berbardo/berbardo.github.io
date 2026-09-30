@@ -37,7 +37,7 @@
                     <p class="textinho">It may take a few days for me to add your drawings</p>
                     <a href="/drawings"><p class="textinho">See all drawings here</p></a>
 
-                    {% include show_drawings.html %}
+                    {% unless page.layout == "post" %}{% include show_drawings.html %}{% endunless %}
                     
                     {% include footer.html %}
                 </div>
